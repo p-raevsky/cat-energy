@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="page__body">
+    <header class="page__header">
+      <nav class="main-nav">
+        <button class="main-nav__toggle main-nav__toggle--nojs" type="button"><span class="visually-hidden">Открыть меню</span></button>
+
+        <a class="main-nav__logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logotype-desktop.svg">
+
+            <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+
+            <img class="main-nav__img-logo" src="img/logotype-mobile.svg" width="190" height="38" alt="Логотип: Кэт энерджи">
+          </picture>
+        </a>
+
+        <ul class="main-nav__list" aria-label="Список пунктов меню">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+          </li>
+
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--active">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page__main">
+      <form class="form" action="https://echo.htmlacademy.ru" method="post" aria-label="Заполнить форму для подбора программы">
+        <div class="container container--form">
+          <h1 class="form__title-main">Подбор программы</h1>
+
+          <p class="form__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        </div>
+
+        <section class="questionnaire">
+          <h2 class="visually-hidden">Анкета</h2>
+
+          <div class="questionnaire__data container container--form">
+            <label class="questionnaire__item data-item">
+              <span class="data-item__text">Имя*:</span>
+
+              <input class="data-item__field visually-hidden" type="text" name="nickname" placeholder="Барсик" required>
+            </label>
+
+            <label class="questionnaire__item data-item">
+              <span class="data-item__text">Вес (кг):*</span>
+
+              <input class="data-item__field visually-hidden" type="text" name="weight" placeholder="7" required>
+            </label>
+
+            <label class="questionnaire__item data-item">
+              <span class="data-item__text">Возраст (лет):</span>
+
+              <input class="data-item__field visually-hidden" type="text" name="age" placeholder="7">
+            </label>
+          </div>
+
+          <div class="questionnaire__choice container container--form">
+            <label class="questionnaire__item-choice choice-item">
+              <input class="choice-item__field visually-hidden" type="radio" name="program-choice" value="Похудение" checked>
+
+              <span class="choice-item__text">Похудение</span>
+            </label>
+
+            <label class="questionnaire__item-choice choice-item">
+              <input class="choice-item__field visually-hidden" type="radio" name="program-choice" value="Набор массы">
+
+              <span class="choice-item__text">Набор массы</span>
+            </label>
+
+            <label class="questionnaire__item-choice choice-item">
+              <input class="choice-item__field visually-hidden" type="radio" name="program-choice" value="Не знаю (нужен ваш совет)">
+
+              <span class="choice-item__text">Не знаю (нужен ваш совет)</span>
+            </label>
+          </div>
+        </section>
+
+        <section class="contacts">
+          <h2 class="contacts__title">Контактные данные (владельца кота)</h2>
+
+          <div class="contacts__data container container--form">
+            <label class="contacts__item data-item">
+              <span class="data-item__text data-item__text--contacts data-item__text--contacts--email">E-mail:*</span>
+
+              <input class="data-item__field visually-hidden" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+            </label>
+
+            <label class="contacts__item data-item">
+              <span class="data-item__text data-item__text--contacts data-item__text--contacts--tel">Телефон:*</span>
+
+              <input class="data-item__field visually-hidden" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
+            </label>
+          </div>
+        </section>
+
+        <section class="comment">
+          <h2 class="comment__title">Комментарий</h2>
+
+          <div class="comment__wrap container container--form">
+            <label class="comment__item">
+              <textarea class="comment__field" name="comment" placeholder="Расскажите обо всех повадках кота" aria-label="Расскажите обо всех повадках кота"></textarea>
+            </label>
+          </div>
+        </section>
+
+        <section class="extra">
+          <h2 class="extra__title">Дополнительно</h2>
+
+          <div class="extra__choice container container--form">
+            <label class="extra__item choice-item">
+              <input class="choice-item__field visually-hidden" type="checkbox" name="extra-choice" value="Cахарозаменитель" checked>
+
+              <span class="choice-item__text choice-item__text--extra">Cахарозаменитель</span>
+            </label>
+
+            <label class="extra__item choice-item">
+              <input class="choice-item__field visually-hidden" type="checkbox" name="extra-choice" value="Питьевая вода">
+
+              <span class="choice-item__text choice-item__text--extra">Питьевая вода</span>
+            </label>
+
+            <label class="extra__item choice-item">
+              <input class="choice-item__field visually-hidden" type="checkbox" name="extra-choice" value="Молоко">
+
+              <span class="choice-item__text choice-item__text--extra">Молоко</span>
+            </label>
+
+            <label class="extra__item choice-item">
+              <input class="choice-item__field visually-hidden" type="checkbox" name="extra-choice" value="Витамины">
+
+              <span class="choice-item__text choice-item__text--extra">Витамины</span>
+            </label>
+          </div>
+        </section>
+
+        <div class="form__button container container--form">
+          <button class="form__button button" type="submit">Отправить заявку</button>
+
+          <p class="form_required-field">* — Обязательные поля</p>
+        </div>
+      </form>
+    </main>
+
+    <footer class="page__footer footer">
+      <section class="footer__cooperation cooperation cooperation--index">
+        <h2 class="cooperation__title">Приглашаем к сотрудничеству дилеров!</h2>
+
+        <p class="cooperation__address">ул. Большая Конюшенная, д. 19/8</p>
+
+        <p class="cooperation__city">Санкт-Петербург</p>
+      </section>
+
+      <div class="footer__map map">
+        <img class="map__image" src="#" width="320" height="362" alt="Местоположение на карте: Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+
+        <iframe class="map__iframe"></iframe>
+
+        <img class="map__pin" src="#" width="57" height="53" alt="Маркер в местоположении на карте">
+      </div>
+
+      <div class="footer__bottom bottom-footer container container--form">
+        <a class="bottom-footer__logo logo" href="index.html">
+          <svg class="logo__text" width="128" height="24" fill="#111111" role="img" aria-label="Логотип: Кэт энерджи">
+            <use xlink:href="img/sprite.svg#logo-text-sprite"></use>
+          </svg>
+        </a>
+
+        <ul class="bottom-footer__list" aria-label="Список ссылок на социальные сети">
+          <li class="bottom-footer__item">
+            <a class="bottom-footer__link bottom-footer__link--vk" href="#"><span class="visually-hidden">Вконтакте</span></a>
+          </li>
+
+          <li class="bottom-footer__item">
+            <a class="bottom-footer__link bottom-footer__link--insta" href="#"><span class="visually-hidden">Инстаграм</span></a>
+          </li>
+
+          <li class="bottom-footer__item">
+            <a class="bottom-footer__link bottom-footer__link--fb" href="#"><span class="visually-hidden">Фейсбук</span></a>
+          </li>
+        </ul>
+
+        <div class="bottom-footer__copyright copyright">
+          <p class="copyright__text">Разработано</p>
+
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg class="copyright__image" width="27" height="34" fill="#666666" role="img" aria-label="Логотип HTML Academy, ссылка ведёт на лендинг интенсива «Профессиональный HTML и CSS, уровень 2»">
+              <use xlink:href="img/sprite.svg#htmlacademy-sprite"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

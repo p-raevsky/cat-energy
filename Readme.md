@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Check status][check-image]][check-url]
 
 * Студент: [Павел](https://up.htmlacademy.ru/adaptive/21/user/1573235).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Зубов](https://htmlacademy.ru/profile/serj).
 
 ---
 
