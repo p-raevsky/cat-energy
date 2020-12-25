@@ -11,7 +11,7 @@
       <nav class="main-nav">
         <button class="main-nav__toggle main-nav__toggle--nojs" type="button"><span class="visually-hidden">Открыть меню</span></button>
 
-        <a class="main-nav__logo">
+        <a class="main-nav__logo" href="index.html">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/logotype-desktop.svg">
 
@@ -23,11 +23,11 @@
 
         <ul class="main-nav__list" aria-label="Список пунктов меню">
           <li class="main-nav__item">
-            <a class="main-nav__link">Главная</a>
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
 
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--active" href="catalog.html">Каталог продукции</a>
+            <a class="main-nav__link main-nav__link--active">Каталог продукции</a>
           </li>
 
           <li class="main-nav__item">
@@ -38,9 +38,11 @@
     </header>
 
     <main class="page__main catalog">
-      <div class="catalog__wrap">
+      <div class="catalog__title-wrap container container--catalog">
         <h1 class="catalog__title-main">Каталог продукции</h1>
+      </div>
 
+      <div class="catalog__card-wrap container container--catalog">
         <ul class="catalog__card-list">
           <li class="catalog__item card">
             <a class="card__img-link" href="#">
@@ -51,22 +53,25 @@
               <h2 class="card__title">Cat Energy Pro 500 Г</h2>
             </a>
 
-            <ul class="card__list">
-              <li class="card__item">
-                <p class="card__text">Масса</p>
-                <p class="card__text">500 г</p>
-              </li>
+            <div class="card__list">
+              <dl class="card__desc">
+                <dt class="card__text">Масса</dt>
 
-              <li class="card__item">
-                <p class="card__text">Вкус</p>
-                <p class="card__text">Курица</p>
-              </li>
+                <dd class="card__text">500 г</dd>
+              </dl>
 
-              <li class="card__item">
-                <p class="card__text">Цена</p>
-                <p class="card__text">700 Р.</p>
-              </li>
-            </ul>
+              <dl class="card__desc">
+                <dt class="card__text">Вкус</dt>
+
+                <dd class="card__text">Курица</dd>
+              </dl>
+
+              <dl class="card__desc">
+                <dt class="card__text">Цена</dt>
+
+                <dd class="card__text">700 Р.</dd>
+              </dl>
+            </div>
 
             <a class="card__button button" href="#">Заказать</a>
           </li>
@@ -80,22 +85,25 @@
               <h2 class="card__title">Cat Energy Pro 1000 Г</h2>
             </a>
 
-            <ul class="card__list">
-              <li class="card__item">
-                <p class="card__text">Масса</p>
-                <p class="card__text">1000 г</p>
-              </li>
+            <div class="card__list">
+              <dl class="card__desc">
+                <dt class="card__text">Масса</dt>
 
-              <li class="card__item">
-                <p class="card__text">Вкус</p>
-                <p class="card__text">Курица</p>
-              </li>
+                <dd class="card__text">1000 г</dd>
+              </dl>
 
-              <li class="card__item">
-                <p class="card__text">Цена</p>
-                <p class="card__text">1000 Р.</p>
-              </li>
-            </ul>
+              <dl class="card__desc">
+                <dt class="card__text">Вкус</dt>
+
+                <dd class="card__text">Курица</dd>
+              </dl>
+
+              <dl class="card__desc">
+                <dt class="card__text">Цена</dt>
+
+                <dd class="card__text">1000 Р.</dd>
+              </dl>
+            </div>
 
             <a class="card__button button" href="#">Заказать</a>
           </li>
@@ -109,22 +117,25 @@
               <h2 class="card__title">Cat Energy Pro 500 Г</h2>
             </a>
 
-            <ul class="card__list">
-              <li class="card__item">
-                <p class="card__text">Масса</p>
-                <p class="card__text">500 г</p>
-              </li>
+            <div class="card__list">
+              <dl class="card__desc">
+                <dt class="card__text">Масса</dt>
 
-              <li class="card__item">
-                <p class="card__text">Вкус</p>
-                <p class="card__text">Рыба</p>
-              </li>
+                <dd class="card__text">500 г</dd>
+              </dl>
 
-              <li class="card__item">
-                <p class="card__text">Цена</p>
-                <p class="card__text">700 Р.</p>
-              </li>
-            </ul>
+              <dl class="card__desc">
+                <dt class="card__text">Вкус</dt>
+
+                <dd class="card__text">Рыба</dd>
+              </dl>
+
+              <dl class="card__desc">
+                <dt class="card__text">Цена</dt>
+
+                <dd class="card__text">700 Р.</dd>
+              </dl>
+            </div>
 
             <a class="card__button button" href="#">Заказать</a>
           </li>
@@ -138,22 +149,25 @@
               <h2 class="card__title">Cat Energy Pro 1000 Г</h2>
             </a>
 
-            <ul class="card__list">
-              <li class="card__item">
-                <p class="card__text">Масса</p>
-                <p class="card__text">1000 г</p>
-              </li>
+            <div class="card__list">
+              <dl class="card__desc">
+                <dt class="card__text">Масса</dt>
 
-              <li class="card__item">
-                <p class="card__text">Вкус</p>
-                <p class="card__text">Рыба</p>
-              </li>
+                <dd class="card__text">1000 г</dd>
+              </dl>
 
-              <li class="card__item">
-                <p class="card__text">Цена</p>
-                <p class="card__text">1000 Р.</p>
-              </li>
-            </ul>
+              <dl class="card__desc">
+                <dt class="card__text">Вкус</dt>
+
+                <dd class="card__text">Рыба</dd>
+              </dl>
+
+              <dl class="card__desc">
+                <dt class="card__text">Цена</dt>
+
+                <dd class="card__text">1000 Р.</dd>
+              </dl>
+            </div>
 
             <a class="card__button button" href="#">Заказать</a>
           </li>
@@ -167,22 +181,25 @@
               <h2 class="card__title">Cat Energy Slim 500 Г</h2>
             </a>
 
-            <ul class="card__list">
-              <li class="card__item">
-                <p class="card__text">Масса</p>
-                <p class="card__text">500 г</p>
-              </li>
+            <div class="card__list">
+              <dl class="card__desc">
+                <dt class="card__text">Масса</dt>
 
-              <li class="card__item">
-                <p class="card__text">Вкус</p>
-                <p class="card__text">Гречка</p>
-              </li>
+                <dd class="card__text">500 г</dd>
+              </dl>
 
-              <li class="card__item">
-                <p class="card__text">Цена</p>
-                <p class="card__text">400 Р.</p>
-              </li>
-            </ul>
+              <dl class="card__desc">
+                <dt class="card__text">Вкус</dt>
+
+                <dd class="card__text">Гречка</dd>
+              </dl>
+
+              <dl class="card__desc">
+                <dt class="card__text">Цена</dt>
+
+                <dd class="card__text">400 Р.</dd>
+              </dl>
+            </div>
 
             <a class="card__button button" href="#">Заказать</a>
           </li>
@@ -196,22 +213,25 @@
               <h2 class="card__title">Cat Energy Slim 1000 Г</h2>
             </a>
 
-            <ul class="card__list">
-              <li class="card__item">
-                <p class="card__text">Масса</p>
-                <p class="card__text">1000 г</p>
-              </li>
+            <div class="card__list">
+              <dl class="card__desc">
+                <dt class="card__text">Масса</dt>
 
-              <li class="card__item">
-                <p class="card__text">Вкус</p>
-                <p class="card__text">Гречка</p>
-              </li>
+                <dd class="card__text">1000 г</dd>
+              </dl>
 
-              <li class="card__item">
-                <p class="card__text">Цена</p>
-                <p class="card__text">700 Р.</p>
-              </li>
-            </ul>
+              <dl class="card__desc">
+                <dt class="card__text">Вкус</dt>
+
+                <dd class="card__text">Гречка</dd>
+              </dl>
+
+              <dl class="card__desc">
+                <dt class="card__text">Цена</dt>
+
+                <dd class="card__text">700 Р.</dd>
+              </dl>
+            </div>
 
             <a class="card__button button" href="#">Заказать</a>
           </li>
@@ -225,46 +245,51 @@
               <h2 class="card__title">Cat Energy Slim 500 Г</h2>
             </a>
 
-            <ul class="card__list">
-              <li class="card__item">
-                <p class="card__text">Масса</p>
-                <p class="card__text">500 г</p>
-              </li>
+            <div class="card__list">
+              <dl class="card__desc">
+                <dt class="card__text">Масса</dt>
 
-              <li class="card__item">
-                <p class="card__text">Вкус</p>
-                <p class="card__text">Рис</p>
-              </li>
+                <dd class="card__text">500 г</dd>
+              </dl>
 
-              <li class="card__item">
-                <p class="card__text">Цена</p>
-                <p class="card__text">500 Р.</p>
-              </li>
-            </ul>
+              <dl class="card__desc">
+                <dt class="card__text">Вкус</dt>
+
+                <dd class="card__text">Рис</dd>
+              </dl>
+
+              <dl class="card__desc">
+                <dt class="card__text">Цена</dt>
+
+                <dd class="card__text">500 Р.</dd>
+              </dl>
+            </div>
 
             <a class="card__button button" href="#">Заказать</a>
           </li>
 
-          <li class="catalog__item card card--last">
+          <li class="catalog__item card card--last container">
             <h2 class="card__title">Показать еще 100500 товаров</h2>
 
-            <P class="card__text card__text--last"></P>
+            <p class="card__text card__text--last">На самом деле вкусов гораздо больше!</p>
 
             <a class="card__button button" href="#">Заказать</a>
           </li>
         </ul>
+      </div>
 
-        <section class="catalog__extra-products">
-          <h2 class="catalog__title-extra">Дополнительные товары</h2>
+      <section class="catalog__extra-products">
+        <h2 class="catalog__title-extra">Дополнительные товары</h2>
 
+        <div class="catalog__extra-wrap container container--catalog">
           <ul class="catalog__extra-list extra-product">
             <li class="extra-product__item">
               <h3 class="extra-product__title">Сахарозаменитель</h3>
 
               <div class="extra-product__desc">
-                <p class="extra-product__unit">1 упаковка (100 г)</p>
+                <span class="extra-product__unit">1 упаковка (100 г)</span>
 
-                <p class="extra-product__price">200 Р.</p>
+                <span class="extra-product__price">200 Р.</span>
               </div>
 
               <a class="extra-product__button button">Заказать</a>
@@ -274,9 +299,9 @@
               <h3 class="extra-product__title">Питьевая вода</h3>
 
               <div class="extra-product__desc">
-                <p class="extra-product__unit">5 литров</p>
+                <span class="extra-product__unit">5 литров</span>
 
-                <p class="extra-product__price">50 Р.</p>
+                <span class="extra-product__price">50 Р.</span>
               </div>
 
               <a class="extra-product__button button">Заказать</a>
@@ -286,9 +311,9 @@
               <h3 class="extra-product__title">Молоко</h3>
 
               <div class="extra-product__desc">
-                <p class="extra-product__unit">1 литр</p>
+                <span class="extra-product__unit">1 литр</span>
 
-                <p class="extra-product__price">100 Р.</p>
+                <span class="extra-product__price">100 Р.</span>
               </div>
 
               <a class="extra-product__button button">Заказать</a>
@@ -298,20 +323,22 @@
               <h3 class="extra-product__title">Витамины</h3>
 
               <div class="extra-product__desc">
-                <p class="extra-product__unit">1 упаковка (30 г)</p>
+                <span class="extra-product__unit">1 упаковка (30 г)</span>
 
-                <p class="extra-product__price">300 Р.</p>
+                <span class="extra-product__price">300 Р.</span>
               </div>
 
               <a class="extra-product__button button">Заказать</a>
             </li>
-
-            <li class="extra-product__item extra-product__item--last">
-              <a class="extra-product__link">Закажите все<br> и получите чехол для кота в подарок!</a>
-            </li>
           </ul>
+        </div>
+      </section>
+
+      <div class="catalog__promo-wrap container container--catalog"></div>
+        <section class="catalog__promo promo-catalog">
+          <h2 class="visually-hidden">Бонусное предложение</h2>
+          <a class="promo-catalog__link">Закажите все<br> и получите чехол для кота в подарок!</a>
         </section>
-      </div>
     </main>
 
     <footer class="page__footer footer">
@@ -331,8 +358,8 @@
         <img class="map__pin" src="#" width="56" height="52" alt="Маркер в местоположении на карте">
       </div>
 
-      <div class="footer__bottom bottom-footer">
-        <a class="bottom-footer__logo logo">
+      <div class="footer__bottom bottom-footer container">
+        <a class="bottom-footer__logo logo" href="index.html">
           <svg class="logo__text" width="128" height="24" fill="#111111" role="img" aria-label="Логотип: Кэт энерджи">
             <use xlink:href="img/sprite.svg#logo-text-sprite"></use>
           </svg>

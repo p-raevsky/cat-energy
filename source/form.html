@@ -11,7 +11,7 @@
       <nav class="main-nav">
         <button class="main-nav__toggle main-nav__toggle--nojs" type="button"><span class="visually-hidden">Открыть меню</span></button>
 
-        <a class="main-nav__logo">
+        <a class="main-nav__logo" href="index.html">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/logotype-desktop.svg">
 
@@ -23,7 +23,7 @@
 
         <ul class="main-nav__list" aria-label="Список пунктов меню">
           <li class="main-nav__item">
-            <a class="main-nav__link">Главная</a>
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
 
           <li class="main-nav__item">
@@ -31,7 +31,7 @@
           </li>
 
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--active" href="form.html">Подбор программы</a>
+            <a class="main-nav__link main-nav__link--active">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -39,50 +39,52 @@
 
     <main class="page__main">
       <form class="form" action="https://echo.htmlacademy.ru" method="post" aria-label="Заполнить форму для подбора программы">
-        <h1 class="form__title-main">Подбор программы</h1>
+        <div class="container container--form">
+          <h1 class="form__title-main">Подбор программы</h1>
 
-        <p class="form__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+          <p class="form__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        </div>
 
         <section class="questionnaire">
           <h2 class="visually-hidden">Анкета</h2>
 
-          <div class="questionnaire__data data data--questionnaire">
-            <label class="data__item data__item--nickname">
-              <span class="data__text data__text--nickname">Имя*:</span>
+          <div class="questionnaire__data container container--form">
+            <label class="questionnaire__item data-item">
+              <span class="data-item__text">Имя*:</span>
 
-              <input class="data__field data__field--nickname" type="text" name="nickname" placeholder="Барсик" required>
+              <input class="data-item__field visually-hidden" type="text" name="nickname" placeholder="Барсик" required>
             </label>
 
-            <label class="data__item data__item--weight">
-              <span class="data__text data__text--weight">Вес (кг):*</span>
+            <label class="questionnaire__item data-item">
+              <span class="data-item__text">Вес (кг):*</span>
 
-              <input class="data__field data__field--weight" type="text" name="weight" placeholder="7" required>
+              <input class="data-item__field visually-hidden" type="text" name="weight" placeholder="7" required>
             </label>
 
-            <label class="data__item data__item--age">
-              <span class="data__text data__text--age">Возраст (лет):</span>
+            <label class="questionnaire__item data-item">
+              <span class="data-item__text">Возраст (лет):</span>
 
-              <input class="data__field data__field--age" type="text" name="age" placeholder="7">
+              <input class="data-item__field visually-hidden" type="text" name="age" placeholder="7">
             </label>
           </div>
 
-          <div class="questionnaire__choice choice choice--questionnaire">
-            <label class="choice__item choice__item--slim">
-              <span class="choice__text choice__text--slim">Похудение</span>
+          <div class="questionnaire__choice container container--form">
+            <label class="questionnaire__item-choice choice-item">
+              <input class="choice-item__field visually-hidden" type="radio" name="program-choice" value="Похудение" checked>
 
-              <input class="choice__field choice__field--slim" type="radio" name="program-choice" value="Похудение" checked>
+              <span class="choice-item__text">Похудение</span>
             </label>
 
-            <label class="choice__item choice__item--plump">
-              <span class="choice__text choice__text--plump">Набор массы</span>
+            <label class="questionnaire__item-choice choice-item">
+              <input class="choice-item__field visually-hidden" type="radio" name="program-choice" value="Набор массы">
 
-              <input class="choice__field choice__field--plump" type="radio" name="program-choice" value="Набор массы">
+              <span class="choice-item__text">Набор массы</span>
             </label>
 
-            <label class="choice__item choice__item--need-advice">
-              <span class="choice__text choice__text--need-advice">Не знаю (нужен ваш совет)</span>
+            <label class="questionnaire__item-choice choice-item">
+              <input class="choice-item__field visually-hidden" type="radio" name="program-choice" value="Не знаю (нужен ваш совет)">
 
-              <input class="choice__field choice__field--need-advice" type="radio" name="program-choice" value="Не знаю (нужен ваш совет)">
+              <span class="choice-item__text">Не знаю (нужен ваш совет)</span>
             </label>
           </div>
         </section>
@@ -90,62 +92,66 @@
         <section class="contacts">
           <h2 class="contacts__title">Контактные данные (владельца кота)</h2>
 
-          <div class="contacts__data data data--contacts">
-            <label class="data__item data__item--email">
-              <span class="data__text data__text--email">E-mail:*</span>
+          <div class="contacts__data container container--form">
+            <label class="contacts__item data-item">
+              <span class="data-item__text data-item__text--contacts data-item__text--contacts--email">E-mail:*</span>
 
-              <input class="data__field data__field--email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+              <input class="data-item__field visually-hidden" type="email" name="email" placeholder="kuklachev@gmail.com" required>
             </label>
 
-            <label class="data__item data__item--tel">
-              <span class="data__text data__text--tel">Телефон:*</span>
+            <label class="contacts__item data-item">
+              <span class="data-item__text data-item__text--contacts data-item__text--contacts--tel">Телефон:*</span>
 
-              <input class="data__field data__field--tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
+              <input class="data-item__field visually-hidden" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
             </label>
           </div>
         </section>
 
         <section class="comment">
-          <h2 class="comment-title">Комментарий</h2>
+          <h2 class="comment__title">Комментарий</h2>
 
-          <label>
-            <textarea class="comment__field" name="comment" placeholder="Расскажите обо всех повадках кота" aria-label="Расскажите обо всех повадках кота"></textarea>
-          </label>
+          <div class="comment__wrap container container--form">
+            <label class="comment__item">
+              <textarea class="comment__field" name="comment" placeholder="Расскажите обо всех повадках кота" aria-label="Расскажите обо всех повадках кота"></textarea>
+            </label>
+          </div>
         </section>
 
         <section class="extra">
           <h2 class="extra__title">Дополнительно</h2>
 
-          <div class="extra__choice choice choice--extra">
-            <label class="choice__item choice__item--sweetener">
-              <span class="choice__text choice__text--sweetener">Cахарозаменитель</span>
+          <div class="extra__choice container container--form">
+            <label class="extra__item choice-item">
+              <input class="choice-item__field visually-hidden" type="checkbox" name="extra-choice" value="Cахарозаменитель" checked>
 
-              <input class="choice__field choice__field--sweetener" type="radio" name="extra-choice" value="Cахарозаменитель" checked>
+              <span class="choice-item__text choice-item__text--extra">Cахарозаменитель</span>
             </label>
 
-            <label class="choice__item choice__item--water">
-              <span class="choice__text choice__text--water">Питьевая вода</span>
+            <label class="extra__item choice-item">
+              <input class="choice-item__field visually-hidden" type="checkbox" name="extra-choice" value="Питьевая вода">
 
-              <input class="choice__field choice__field--water" type="radio" name="extra-choice" value="Питьевая вода">
+              <span class="choice-item__text choice-item__text--extra">Питьевая вода</span>
             </label>
 
-            <label class="choice__item choice__item--milk">
-              <span class="choice__text choice__text--milk">Молоко</span>
+            <label class="extra__item choice-item">
+              <input class="choice-item__field visually-hidden" type="checkbox" name="extra-choice" value="Молоко">
 
-              <input class="choice__field choice__field--milk" type="radio" name="extra-choice" value="Молоко">
+              <span class="choice-item__text choice-item__text--extra">Молоко</span>
             </label>
 
-            <label class="choice__item choice__item--vitamins">
-              <span class="choice__text choice__text--vitamins">Витамины</span>
+            <label class="extra__item choice-item">
+              <input class="choice-item__field visually-hidden" type="checkbox" name="extra-choice" value="Витамины">
 
-              <input class="choice__field choice__field--vitamins" type="radio" name="extra-choice" value="Витамины">
+              <span class="choice-item__text choice-item__text--extra">Витамины</span>
             </label>
           </div>
         </section>
 
-        <button class="form__button button" type="submit">Отправить заявку</button>
+        <div class="form__button container container--form">
+          <button class="form__button button" type="submit">Отправить заявку</button>
 
-        <p class="form_required-field">*&nbsp;—&nbsp;Обязательные&nbsp;поля</p>
+          <p class="form_required-field">* — Обязательные поля</p>
+        </div>
       </form>
     </main>
 
@@ -166,8 +172,8 @@
         <img class="map__pin" src="#" width="57" height="53" alt="Маркер в местоположении на карте">
       </div>
 
-      <div class="footer__bottom bottom-footer">
-        <a class="bottom-footer__logo logo">
+      <div class="footer__bottom bottom-footer container container--form">
+        <a class="bottom-footer__logo logo" href="index.html">
           <svg class="logo__text" width="128" height="24" fill="#111111" role="img" aria-label="Логотип: Кэт энерджи">
             <use xlink:href="img/sprite.svg#logo-text-sprite"></use>
           </svg>
