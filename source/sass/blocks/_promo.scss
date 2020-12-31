@@ -1,0 +1,34 @@
+.promo__wrap {
+  @media (max-width: $mobile-max) {
+    padding-top: 22px;
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: stretch;
+    padding-top: 82px;
+  }
+}
+
+.promo__item {
+  &:not(:last-child) {
+    @media (max-width: $mobile-max) {
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: $tablet) {
+      margin-bottom: 30px;
+    }
+
+    @media (min-width: $desktop) {
+      display: inline-block;
+      margin-right: 80px;
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    width: 468px;
+  }
+}

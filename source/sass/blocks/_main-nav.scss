@@ -1,0 +1,161 @@
+.main-nav__wrap {
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 24px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 53px;
+  }
+}
+
+.main-nav__logo-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 17px 16px 20px;
+
+  background-color: $white;
+  border-bottom: 1px solid $basic-grey-4;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+
+    background-color: transparent;
+    border: none;
+  }
+}
+
+.main-nav__toggle {
+  position: relative;
+
+  width: 38px;
+  height: 38px;
+
+  background-color: transparent;
+  border: 0;
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: 17px;
+    right: 5px;
+
+    width: 28px;
+    height: 2px;
+
+    background-color: $black;
+  }
+
+  &::after {
+    transform: rotate(45deg);
+  }
+
+  &::before {
+    transform: rotate(-45deg);
+  }
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.main-nav__logo {
+  display: block;
+}
+
+.main-nav__img-logo {
+  display: block;
+  @media (min-width: $tablet) {
+    width: 174px;
+    height: 52px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 202px;
+    height: 59px;
+  }
+}
+
+.main-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+
+  text-align: center;
+
+  background-color: $white;
+
+  @include list;
+
+  @media (min-width: $tablet) {
+    justify-content: start;
+    max-width: 610px;
+
+    background-color: transparent;
+  }
+}
+
+.main-nav__item {
+  width: 100%;
+  padding: 22px 24px;
+
+  border-bottom: 1px solid $basic-grey-4;
+
+  &:not(:last-child) {
+    @media (min-width: $tablet) {
+      margin-right: 35px;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    width: max-content;
+    padding: 0;
+    padding-top: 18px;
+
+    border: none;
+  }
+}
+
+.main-nav__link {
+  display: block;
+
+  color: $black;
+
+  @include fonts($font-size-m-100, $line-height-m-100, $font, 500);
+
+  &--active {
+    @media (min-width: $tablet) {
+      border-bottom: 2px solid $basic-green;
+    }
+  }
+
+  &--index {
+    @media (min-width: $desktop) {
+      color: $white;
+    }
+
+    &--active {
+      @media (min-width: $tablet) {
+        border-bottom: 2px solid $basic-green;
+      }
+
+      @media (min-width: $desktop) {
+        border-bottom: 2px solid $white;
+      }
+    }
+  }
+
+  @media (min-width: $tablet) {
+    padding-bottom: 8px;
+
+    @include fonts($font-size-s-400, $line-height-m-400);
+  }
+
+  @media (min-width: $desktop) {
+    @include fonts($font-size-m-100, $line-height-m-600);
+  }
+}

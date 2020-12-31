@@ -1,0 +1,77 @@
+// Font
+
+$font: "Oswald", "Arial", sans-serif;
+$font-text: "Arial", sans-serif;
+$font-size-s-100: 12px;
+$font-size-s-200: 14px;
+$font-size-s-300: 16px;
+$font-size-s-400: 18px;
+$font-size-m-100: 20px;
+$font-size-m-200: 24px;
+$font-size-m-300: 30px;
+$font-size-b-100: 36px;
+$font-size-b-200: 60px;
+$font-size-l-100: 280px;
+$line-height-s-0: 0;
+$line-height-s-100: 12px;
+$line-height-s-200: 14px;
+$line-height-s-300: 16px;
+$line-height-s-400: 18px;
+$line-height-m-100: 20px;
+$line-height-m-200: 21px;
+$line-height-m-300: 22px;
+$line-height-m-400: 24px;
+$line-height-m-500: 26px;
+$line-height-m-600: 30px;
+$line-height-b-100: 36px;
+$line-height-b-200: 37px;
+$line-height-b-300: 40px;
+$line-height-b-400: 60px;
+$line-height-l-100: 280px;
+
+// Display size
+
+$mobile-max: 767px;
+$tablet: 768px;
+$tablet-max: 1279px;
+$desktop: 1280px;
+
+// White colors:
+
+$white: #ffffff;
+$white-30: rgba(#ffffff, 0.3);
+$white-60: rgba(#ffffff, 0.6);
+
+// Black colors:
+
+$black: #000000;
+$black-15: rgba(#000000, 0.15);
+$black-30: rgba(#000000, 0.3);
+$black-60: rgba(#000000, 0.6);
+
+// primary colors:
+
+$basic-green: #68b738;
+$basic-green-85: rgba(#68b738, 0.85);
+$basic-green-dark: #5eaa2f;
+
+// Gray colors:
+
+$basic-grey: #f2f2f2;
+$basic-grey-2: #ebebeb;
+$basic-grey-3: #cdcdcd;
+$basic-grey-4: #e6e6e6;
+$basic-grey-5: #eaeaea;
+$special-grey: #e7e7e7;
+$special-grey-2: #cdcdcd;
+$special-grey-3: #bababa;
+$special-grey-4: #d9d9d9;
+$special-grey-dark: #666666;
+$special-grey-darker: #444444;
+$special-grey-darker-30: rgba(#444444, 0.3);
+$special-grey-darkest: #222222;
+$special-grey-darkest-30: rgba(#222222, 0.3);
+
+// Error colors:
+
+$Error-color: #ff8282;

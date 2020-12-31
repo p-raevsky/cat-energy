@@ -1,0 +1,120 @@
+.heading {
+  width: 100%;
+  height: max-content;
+
+  text-align: center;
+
+  @media (max-width: $mobile-max) {
+    background-image: url("../img/index-background@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 63% 0;
+    background-size: 180% auto;
+  }
+
+  @media (max-width: $mobile-max)  and (min-resolution: 2dppx) {
+    background-image: url("../img/index-background@2x.jpg");
+  }
+
+  @media (min-width: $tablet) {
+    text-align: start;
+  }
+}
+
+.heading__wrap {
+  @media (max-width: $mobile-max) {
+    min-height: 453px;
+    padding-top: 27px;
+
+    background: linear-gradient(to bottom, $basic-green-85 63%, $white 63%);
+  }
+
+  @media (min-width: $tablet) {
+    text-align: center;
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.heading__inner-wrap {
+  position: relative;
+
+  @media (min-width: $tablet) {
+    padding-top: 62px;
+    padding-left: 80px;
+
+    text-align: left;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 0;
+  }
+}
+
+.heading__title {
+  @include fonts($font-size-b-100, $line-height-b-100, $text-transform: none);
+
+  @media (max-width: $mobile-max) {
+    padding-bottom: 25px;
+
+    color: $white;
+  }
+
+  @media (min-width: $tablet) {
+    width: 415px;
+    padding-bottom: 41px;
+
+    @include fonts($font-size-b-200, $line-height-b-400, $text-transform: none);
+  }
+}
+
+.heading__text {
+  @media (max-width: $mobile-max) {
+    margin: 0;
+    padding-bottom: 29px;
+
+    color: $white;
+
+    @include fonts($font-size-s-200, $line-height-s-200);
+  }
+
+  @media (min-width: $tablet) {
+    margin: 0;
+    padding-bottom: 49px;
+
+    @include fonts($font-size-m-100, $line-height-m-100);
+  }
+}
+
+.heading__sample-img {
+  object-fit: cover;
+
+  @media (min-width: $tablet) {
+    width: 709px;
+    height: 609px;
+    margin-top: -75px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 552px;
+    height: 499px;
+    margin-top: 32px;
+    margin-left: -68px;
+  }
+}
+
+.heading__button {
+  text-align: center;
+
+  @media (max-width: $mobile-max) {
+    position: absolute;
+    bottom: -313px;
+    left: 0;
+  }
+
+  @media (min-width: $tablet) {
+    width: 244px;
+  }
+}

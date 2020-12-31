@@ -1,0 +1,29 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 22px;
+
+  @media (min-width: $tablet) {
+    justify-content: flex-end;
+    width: 200px;
+    padding-top: 0;
+  }
+}
+
+.copyright__text {
+  width: max-content;
+  margin: 0;
+
+  color: $special-grey-darker;
+
+  @include fonts($font-size-s-300, $line-height-s-400, $font-text, 400, none);
+
+  @media (min-width: $tablet) {
+    margin-right: 22px;
+  }
+}
+
+.copyright__link {
+  background-color: $white; //пока не сделаю сборку и не поставлю спрайт
+}

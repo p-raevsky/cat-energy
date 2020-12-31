@@ -1,0 +1,188 @@
+.promo-index {
+  background-color: $basic-grey;
+
+  @media (max-width: $mobile-max) {
+    padding: 30px 20px 22px;
+  }
+
+  @media (min-width: $tablet) {
+    padding: 77px 40% 53px 52px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 77px 51px 57px;
+  }
+}
+
+.promo-index__title {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0;
+
+    width: 50px;
+    height: 50px;
+
+    background-color: $basic-green;
+    border-radius: 50%;
+
+    @media (min-width: $tablet) {
+      top: 5px;
+      right: -225px;
+      left: auto;
+
+      width: 200px;
+      height: 200px;
+    }
+
+    @media (min-width: $desktop) {
+      top: -30px;
+      left: 0;
+
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+  }
+
+  &--slim::after {
+    top: -7px;
+    left: 7px;
+
+    width: 36px;
+    height: 50px;
+
+    background: url("../img/cat-slim.svg") no-repeat 0 0;
+    background-size: contain;
+
+    @media (min-width: $tablet) {
+      top: -7px;
+      right: -192px;
+      left: auto;
+
+      width: 140px;
+      height: 192px;
+    }
+
+    @media (min-width: $desktop) {
+      top: -33px;
+      left: 15px;
+
+      width: 70px;
+      height: 97px;
+    }
+  }
+
+  &--plump::after {
+    top: 6px;
+    left: -10px;
+
+    width: 67px;
+    height: 28px;
+
+    background: url("../img/cat-plump.svg") no-repeat 0 0;
+    background-size: contain;
+
+    @media (min-width: $tablet) {
+      top: 51px;
+      right: -252px;
+      left: auto;
+
+      width: 268px;
+      height: 112px;
+    }
+
+    @media (min-width: $desktop) {
+      top: -11px;
+      left: -19px;
+
+      width: 134px;
+      height: 56px;
+    }
+  }
+
+
+
+  @media (max-width: $mobile-max) {
+    margin-bottom: 29px;
+    padding-left: 71px;
+
+    @include fonts($font-size-m-200, $line-height-b-200);
+  }
+
+  @media (min-width: $tablet) {
+    margin-bottom: 24px;
+
+    @include fonts($font-size-b-100, $line-height-b-100);
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 73px;
+    padding-left: 163px;
+  }
+}
+
+.promo-index__text {
+  margin-top: 0;
+  @media (max-width: $mobile-max) {
+    margin-bottom: 19px;
+    padding-bottom: 23px;
+
+    border-bottom: 1px solid $special-grey-4;
+
+    @include fonts($font-size-s-200, $line-height-s-400, $font-text, 400, none);
+  }
+
+  @media (min-width: $tablet) {
+    margin-bottom: 48px;
+
+    @include fonts($font-size-s-300, $line-height-m-400, $font-text, 400, none);
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 23px;
+  }
+}
+
+.promo-index__link {
+  position: relative;
+
+  display: block;
+
+  color: $black;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 100px;
+
+    width: 24px;
+    height: 12px;
+
+    background: url("../img/arrow.svg") no-repeat 0 0;
+
+    @media (min-width: $tablet) {
+      top: 8px;
+      left: 126px;
+    }
+  }
+
+  @media (max-width: $mobile-max) {
+    padding-right: 146px;
+
+    @include fonts($font-size-s-300, $line-height-s-400);
+  }
+
+  @media (min-width: $tablet) {
+    @include fonts($font-size-m-100, $line-height-m-600);
+  }
+}

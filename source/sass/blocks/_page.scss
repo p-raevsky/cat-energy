@@ -1,0 +1,39 @@
+.page {
+  height: 100%;
+}
+
+.page__body {
+  display: grid;
+  align-content: start;
+  min-height: 100vh;
+
+  font-family: $font-text;
+
+  background-color: $white;
+
+  grid-template-rows: min-content 1fr min-content;
+}
+
+.page__header {
+  &--index {
+    @media (min-width: $desktop) {
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: right 0;
+      background-size: 742px auto;
+    }
+
+    @media (min-width: $desktop) and (min-resolution: 2dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+    }
+  }
+}
+
+.page__header-wrap {
+  @media (min-width: $desktop) {
+    background-image: linear-gradient(to right, $white 50%, $basic-green-85 50%);
+    background-repeat: no-repeat;
+    background-position: right 0;
+    background-size: 1484px auto;
+  }
+}

@@ -1,0 +1,21 @@
+.button {
+  display: block;
+
+  color: $white;
+
+  background-color: $basic-green;
+  border: none;
+
+  @media (max-width: $mobile-max) {
+    width: 100%;
+    padding: 7px 0;
+
+    @include fonts($font-size-s-300, $line-height-m-100);
+  }
+
+  @media (min-width: $tablet) {
+    padding: 14px 14px;
+
+    @include fonts($font-size-m-100, $line-height-m-100);
+  }
+}

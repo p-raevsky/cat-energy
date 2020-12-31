@@ -1,1 +1,20 @@
-// Начните писать стили здесь
+@import "abstracts/normalize";
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "base/font";
+@import "glodal/global";
+@import "blocks/page.scss";
+@import "blocks/visually-hidden";
+@import "blocks/container";
+@import "blocks/button";
+@import "blocks/main-nav";
+@import "blocks/heading";
+@import "blocks/promo";
+@import "blocks/promo-index";
+@import "blocks/advantages";
+@import "blocks/demo";
+@import "blocks/footer";
+@import "blocks/cooperation";
+@import "blocks/map";
+@import "blocks/bottom-footer";
+@import "blocks/copyright";

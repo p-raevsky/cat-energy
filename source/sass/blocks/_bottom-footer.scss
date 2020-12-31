@@ -1,0 +1,63 @@
+.bottom-footer {
+  padding-top: 39px;
+  padding-bottom: 22px;
+
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 57px;
+    padding-bottom: 59px;
+  }
+}
+
+.bottom-footer__logo {
+  display: block;
+  width: 128px; //пока не сделаю сбору и не поставлю спрайт
+  margin: 0 auto; //пока не сделаю сбору и не поставлю спрайт
+  margin-bottom: 32px;
+
+  background-color: $white; //пока не сделаю сбору и не поставлю спрайт
+
+  @media (min-width: $tablet) {
+    margin-bottom: 0;
+  }
+}
+
+.bottom-footer__list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+  border-top: 1px solid $special-grey-4;
+  border-bottom: 1px solid $special-grey-4;
+
+  @include list(0, 20px 0);
+
+  @media (min-width: $tablet) {
+    padding: 0 20px;
+
+    border: 0;
+  }
+}
+
+.bottom-footer__item {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+
+  background-color: $white; //пока не сделаю сбору и не поставлю спрайт
+
+  &:first-child {
+    margin-left: auto;
+  }
+  &:last-child {
+    margin-right: auto;
+  }
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
