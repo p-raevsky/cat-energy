@@ -109,8 +109,6 @@
     }
   }
 
-
-
   @media (max-width: $mobile-max) {
     margin-bottom: 29px;
     padding-left: 71px;
@@ -132,6 +130,7 @@
 
 .promo-index__text {
   margin-top: 0;
+
   @media (max-width: $mobile-max) {
     margin-bottom: 19px;
     padding-bottom: 23px;
