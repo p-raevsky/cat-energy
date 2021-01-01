@@ -54,6 +54,8 @@
 }
 
 .heading__title {
+  margin: 0;
+
   @include fonts($font-size-b-100, $line-height-b-100, $text-transform: none);
 
   @media (max-width: $mobile-max) {

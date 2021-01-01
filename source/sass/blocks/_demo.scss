@@ -34,6 +34,8 @@
 }
 
 .demo__title {
+  margin: 0;
+
   color: $black;
 
   @include fonts($font-size-b-100, $line-height-b-300, $font, 400, none);
@@ -359,8 +361,8 @@
     background-color: $basic-green;
     border-radius: 50%;
     box-shadow: inset 0 0 0 12px $white,
-      inset 0 0 0 2px $special-grey-2,
-      0 1px 3px $black-15;
+    inset 0 0 0 2px $special-grey-2,
+    0 1px 3px $black-15;
     transform: translateX(-50%);
   }
 }

@@ -17,6 +17,8 @@
 .promo-index__title {
   position: relative;
 
+  margin-top: 0;
+
   &::before {
     content: "";
     position: absolute;

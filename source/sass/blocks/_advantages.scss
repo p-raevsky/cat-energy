@@ -16,6 +16,7 @@
 }
 
 .advantages__title {
+  margin-top: 0;
   margin-bottom: 38px;
 
   @include fonts($font-size-b-100, $line-height-b-300, $font, 400, none);
