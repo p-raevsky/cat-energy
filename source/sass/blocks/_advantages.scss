@@ -1,0 +1,177 @@
+.advantages__wrap {
+  padding-bottom: 46px;
+
+  @media (max-width: $mobile-max) {
+    padding-top: 27px;
+  }
+
+  @media (min-width: $tablet) {
+    padding-top: 45px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 71px;
+    padding-bottom: 0;
+  }
+}
+
+.advantages__title {
+  margin-top: 0;
+  margin-bottom: 38px;
+
+  @include fonts($font-size-b-100, $line-height-b-300, $font, 400, none);
+
+  @media (min-width: $tablet) {
+    margin-bottom: 0;
+
+    @include fonts($font-size-b-200, $line-height-b-400, $font, 400, none);
+  }
+}
+
+.advantages__list {
+  @media (max-width: $mobile-max) {
+    @include list;
+  }
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+
+    counter-reset: myCounter;
+  }
+}
+
+.advantages__item {
+  position: relative;
+
+  min-height: 57px;
+  margin-bottom: 20px;
+  padding-left: 80px;
+
+  @include fonts($font-size-s-200, $line-height-s-400, $font-text, 400, none);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:nth-child(2n+1) {
+    @media (min-width: $tablet) and (max-width: $tablet-max) {
+      padding-right: 40px;
+    }
+  }
+
+  &:nth-child(4n) {
+    @media (min-width: $desktop) {
+      padding-right: 0;
+    }
+  }
+
+  &::after {
+    @media (min-width: $tablet) {
+      content: counter(myCounter);
+      position: absolute;
+      top: 36px;
+      left: 115px;
+
+      color: $basic-grey;
+
+      counter-increment: myCounter;
+
+      @include fonts($font-size-l-100, $line-height-l-100);
+    }
+  }
+
+  @media (min-width: $tablet) {
+    width: 249px;
+    margin-right: 12%;
+    margin-bottom: 0;
+    padding-top: 183px;
+    padding-left: 0;
+
+    list-style: none;
+
+    @include fonts($font-size-s-300, $line-height-m-400, $font-text, 400, none);
+  }
+
+  @media (min-width: $desktop) {
+    width: 21%;
+    margin-right: 0;
+    padding-right: 65px;
+  }
+}
+
+.advantages__text {
+  position: relative;
+
+  margin: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -79px;
+
+    width: 60px;
+    height: 60px;
+
+    background-color: $basic-green;
+
+    @media (min-width: $tablet) {
+      top: -107px;
+      left: 0;
+
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: -65px;
+
+    background-size: cover;
+
+    @media (min-width: $tablet) {
+      top: -84px;
+      left: 24px;
+    }
+  }
+
+  &--org::after {
+    width: 30px;
+    height: 32px;
+
+    background-image: url("../img/icon-leaf.svg");
+  }
+
+  &--powder::after {
+    width: 30px;
+    height: 31px;
+
+    background-image: url("../img/icon-tub.svg");
+  }
+
+  &--food::after {
+    width: 27px;
+    height: 30px;
+
+    background-image: url("../img/icon-eat.svg");
+  }
+
+  &--profit::after {
+    width: 30px;
+    height: 33px;
+
+    background-image: url("../img/icon-alarm.svg");
+  }
+
+  @media (min-width: $tablet) {
+    z-index: 3;
+
+    padding-bottom: 50px;
+  }
+}

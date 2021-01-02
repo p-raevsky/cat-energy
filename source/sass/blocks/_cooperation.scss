@@ -1,0 +1,88 @@
+.cooperation {
+  background-color: $basic-grey;
+
+  &--index {
+    background-color: $white;
+  }
+}
+
+.cooperation__wrap {
+  position: relative;
+
+  padding-top: 28px;
+  padding-bottom: 28px;
+
+  @media (min-width: $tablet) {
+    padding-top: 65px;
+    padding-bottom: 52px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.cooperation__inner-wrap {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $desktop) {
+    position: absolute;
+    top: 97px;
+    z-index: 3;
+
+    width: 417px;
+    padding-top: 64px;
+    padding-right: 89px;
+    padding-bottom: 58px;
+    padding-left: 76px;
+
+    background-color: $white;
+  }
+}
+
+.cooperation__title {
+  width: 140px;
+  margin: 0;
+
+  @include fonts($font-size-s-300, $line-height-s-400);
+
+  @media (min-width: $tablet) {
+    width: 220px;
+
+    @include fonts($font-size-m-100, $line-height-m-200);
+  }
+}
+
+.cooperation__text-wrap {
+  width: 140px;
+
+  text-align: left;
+
+  @media (min-width: $tablet) {
+    width: 156px;
+
+    text-align: right;
+  }
+
+  @media (min-width: $desktop) {
+    text-align: left;
+  }
+}
+
+.cooperation__text {
+  margin: 0;
+
+  @include fonts($font-size-s-200, $line-height-m-100, $font-text, 400, none);
+
+  &--address {
+    @media (min-width: $tablet) {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    @include fonts($font-size-s-300, $line-height-m-100, $font-text, 400, none);
+  }
+}
