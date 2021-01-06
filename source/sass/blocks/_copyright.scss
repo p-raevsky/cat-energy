@@ -9,6 +9,10 @@
     width: 200px;
     padding-top: 0;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__text {
@@ -24,6 +28,8 @@
   }
 }
 
-.copyright__link {
-  background-color: $white; //пока не сделаю сборку и не поставлю спрайт
+.copyright__image {
+  &:hover {
+    fill: $basic-green;
+  }
 }
