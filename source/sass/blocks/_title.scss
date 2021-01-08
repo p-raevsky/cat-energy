@@ -1,0 +1,28 @@
+.title {
+  position: relative;
+  z-index: 2;
+
+  display: inline-block;
+
+  background-color: $white;
+
+  @include fonts($font-size-m-200, $line-height-m-500, $font, 400, none);
+
+  @media (max-width: $mobile-max) {
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: $tablet) {
+    @include fonts($font-size-b-100, $line-height-b-100, $font, 400, none);
+  }
+
+  @media (min-width: $desktop) {
+    @include fonts($font-size-b-100, $line-height-b-100, $font, 400, none);
+  }
+
+  br {
+    @media (min-width: $tablet) {
+      display: none;
+    }
+  }
+}

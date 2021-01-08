@@ -1,0 +1,46 @@
+.questionnaire {
+  @media (min-width: $tablet) {
+    margin-bottom: 75px;
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1220px;
+    margin: 0 auto;
+    margin-bottom: 69px;
+  }
+}
+
+.questionnaire__data {
+  margin-bottom: 27px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 47%;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.questionnaire__choice {
+  padding: 28px 20px 25px;
+
+  border-top: 1px solid $special-grey-4;
+  border-bottom: 1px solid $special-grey-4;
+
+  @media (min-width: $tablet) {
+    margin: 0 70px;
+    padding: 30px 0;
+
+    border: 1px solid $special-grey-4;
+  }
+
+  @media (min-width: $desktop) {
+    width: 47%;
+    margin: 0;
+  }
+}

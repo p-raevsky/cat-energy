@@ -1,0 +1,138 @@
+.choice-item {
+  position: relative;
+
+  display: block;
+
+  &:not(:last-child) {
+    margin-bottom: 24px;
+
+    @media (min-width: $tablet) {
+      margin-bottom: 42px;
+    }
+  }
+}
+
+.choice-item__text {
+  margin-left: 46px;
+
+  @include fonts($font-size-s-300, $line-height-s-400);
+
+  @media (min-width: $tablet) {
+    margin-left: 88px;
+
+    @include fonts($font-size-m-100, $line-height-m-600);
+  }
+
+  &--extra {
+    @media (min-width: $tablet) {
+      margin-left: 58px;
+    }
+  }
+}
+
+.choice-item__field {
+  & + span::before,
+  &:checked + span::after {
+    content: "";
+    position: absolute;
+
+    border-radius: 50%;
+  }
+
+  & + span::before {
+    top: -7px;
+    left: 0;
+
+    width: 30px;
+    height: 30px;
+
+    border: 1px solid $special-grey-2;
+
+    @media (min-width: $tablet) {
+      top: -6px;
+      left: 25px;
+
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  &:checked {
+    & + span::after {
+      top: 2px;
+      left: 9px;
+
+      width: 14px;
+      height: 14px;
+
+      background-color: $basic-green;
+
+      @media (min-width: $tablet) {
+        top: 6px;
+        left: 37px;
+
+        width: 18px;
+        height: 18px;
+      }
+    }
+
+    &:hover:not(:disabled) {
+      & + span::after {
+        cursor: pointer;
+      }
+    }
+
+    &:disabled {
+      & + span::after {
+        cursor: default;
+      }
+    }
+  }
+
+  &:hover:not(:disabled) {
+    & + span::before {
+      border-color: $special-grey-3;
+      cursor: pointer;
+    }
+  }
+
+  &:disabled {
+    & + span {
+      cursor: default;
+      opacity: 0.3;
+    }
+
+    & + span::before {
+      cursor: default;
+    }
+  }
+
+  &--extra {
+    & + span::before {
+      border-radius: 0;
+
+      @media (min-width: $tablet) {
+        left: 0;
+      }
+    }
+
+    &:checked {
+      & + span::after {
+        top: -2px;
+        left: 7px;
+
+        width: 18px;
+        height: 21px;
+
+        background-color: transparent;
+        background-image: url("../img/icon-tick.svg");
+        background-position: 50% 50%;
+
+        @media (min-width: $tablet) {
+          top: 4px;
+          left: 13px;
+        }
+      }
+    }
+  }
+}

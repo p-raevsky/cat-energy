@@ -1,0 +1,28 @@
+.contacts {
+  padding: 26px 0 24px;
+
+  @media (min-width: $tablet) {
+    padding-top: 0;
+    padding-bottom: 65px;
+  }
+}
+
+.contacts__data {
+  padding-top: 35px;
+
+  @media (min-width: $tablet) {
+    padding-top: 76px;
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.contacts__item {
+  @media (min-width: $desktop) {
+    width: 47%;
+  }
+}
