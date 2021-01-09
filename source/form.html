@@ -102,17 +102,29 @@
           </div>
 
           <div class="contacts__data container container--form">
-            <label class="contacts__item data-item data-item--contacts data-item--contacts--email">
-              <span class="data-item__text data-item__text--contacts data-item__text--contacts--email">E-mail:*</span>
+            <div class="contacts__item-wrap">
+              <label class="contacts__item data-item data-item--contacts">
+                <span class="data-item__text">E-mail:*</span>
 
-              <input class="data-item__field data-item__field--contacts data-item__field--contacts" type="email" name="email" placeholder="kuklachev@gmail.com" required>
-            </label>
+                <input class="data-item__field data-item__field--contacts" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+              </label>
 
-            <label class="contacts__item data-item data-item--contacts data-item--contacts--tel">
-              <span class="data-item__text data-item__text--contacts data-item__text--contacts--tel">Телефон:*</span>
+              <svg class="contacts__icon contacts__icon--email--error" width="18" height="13" fill="#222222" role="img" aria-label="Иконка почты">
+                <use xlink:href="img/sprite.svg#icon-email-sprite"></use>
+              </svg>
+            </div>
 
-              <input class="data-item__field data-item__field--contacts data-item__field--contacts" type="tel" name="tel" pattern="^[ 0-9\s\-\(\)]+$" placeholder="8 (960) 900-60-90" required>
-            </label>
+            <div class="contacts__item-wrap">
+              <label class="contacts__item data-item data-item--contacts">
+                  <span class="data-item__text">Телефон:*</span>
+
+                  <input class="data-item__field data-item__field--contacts" type="tel" name="tel" pattern="^[ 0-9\s\-\(\)]+$" placeholder="8 (960) 900-60-90" required>
+              </label>
+
+              <svg class="contacts__icon contacts__icon--tel--disabled" width="20" height="20" fill="#222222" role="img" aria-label="Иконка телефона">
+                <use xlink:href="img/sprite.svg#icon-tel-sprite"></use>
+              </svg>
+            </div>
           </div>
         </section>
 

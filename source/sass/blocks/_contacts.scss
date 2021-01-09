@@ -21,8 +21,61 @@
   }
 }
 
-.contacts__item {
+.contacts__item-wrap {
+  position: relative;
+
   @media (min-width: $desktop) {
     width: 47%;
+  }
+}
+
+.contacts__icon {
+  position: absolute;
+
+  &--email {
+    top: 16px;
+    right: 14px;
+
+    @media (min-width: $tablet) {
+      top: 20px;
+    }
+
+    &--error {
+      top: 16px;
+      right: 14px;
+
+      fill: $Error-color;
+    }
+
+    &--disabled {
+      top: 16px;
+      right: 14px;
+
+      fill: $basic-green;
+    }
+  }
+
+  &--tel {
+    top: 13px;
+    right: 11px;
+
+    @media (min-width: $tablet) {
+      top: 17px;
+    }
+
+
+    &--error {
+      top: 13px;
+      right: 11px;
+
+      fill: $Error-color;
+    }
+
+    &--disabled {
+      top: 13px;
+      right: 11px;
+
+      fill: $basic-green;
+    }
   }
 }
