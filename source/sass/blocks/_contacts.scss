@@ -45,6 +45,10 @@
       right: 14px;
 
       fill: $Error-color;
+
+      @media (min-width: $tablet) {
+        top: 20px;
+      }
     }
 
     &--disabled {
@@ -52,6 +56,10 @@
       right: 14px;
 
       fill: $basic-green;
+
+      @media (min-width: $tablet) {
+        top: 20px;
+      }
     }
   }
 
@@ -69,6 +77,10 @@
       right: 11px;
 
       fill: $Error-color;
+
+      @media (min-width: $tablet) {
+        top: 17px;
+      }
     }
 
     &--disabled {
@@ -76,6 +88,10 @@
       right: 11px;
 
       fill: $basic-green;
+
+      @media (min-width: $tablet) {
+        top: 17px;
+      }
     }
   }
 }
