@@ -1,0 +1,67 @@
+.form {
+  padding: 27px 0 32px;
+
+  @media (min-width: $tablet) {
+    padding: 65px 0 72px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 77px 0 82px;
+  }
+}
+
+.form__title-main {
+  margin-top: 0;
+  margin-bottom: 37px;
+
+  @include fonts($font-size-b-100, $line-height-b-100, $font, 400, none);
+
+  @media (min-width: $tablet) {
+    margin-bottom: 55px;
+
+    @include fonts($font-size-b-200, $line-height-b-400, $font, 400, none);
+  }
+}
+
+.form__subtitle {
+  width: 230px;
+  margin-top: 0;
+  margin-bottom: 39px;
+
+  @include fonts($font-size-s-200, $line-height-s-400);
+
+  @media (min-width: $tablet) {
+    width: 325px;
+    margin-bottom: 66px;
+
+    @include fonts($font-size-m-100, $line-height-m-600);
+  }
+}
+
+.form__button-wrap {
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.form__button {
+  margin-bottom: 21px;
+
+  @media (min-width: $tablet) {
+    width: 36%;
+    max-width: 568px;
+    margin-right: 61px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin-right: 81px;
+  }
+}
+
+.form_required-field {
+  margin: 0;
+}

@@ -1,0 +1,82 @@
+.data-item {
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 13px;
+
+    @media (min-width: $tablet) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &--contacts {
+    @media (min-width: $desktop) {
+      margin-bottom: 0;
+    }
+
+    &:not(:last-child) {
+      @media (min-width: $desktop) {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.data-item__text {
+  width: max-content;
+  margin-right: 14px;
+
+  color: $special-grey-darker;
+
+  @include fonts($font-size-s-300, $line-height-s-400);
+
+  @media (min-width: $tablet) {
+    @include fonts($font-size-m-100, $line-height-m-600);
+  }
+}
+
+.data-item__field {
+  flex-grow: 1;
+  padding: 13px 16px 14px;
+
+  color: $special-grey-darker;
+
+  border: 1px solid $special-grey;
+  outline: none;
+
+  @include fonts($font-size-s-300, $line-height-s-400);
+
+  &::placeholder {
+    color: $special-grey-darker;
+  }
+
+  &:hover {
+    border-color: $basic-grey-3;
+  }
+
+  &:focus {
+    border: 1px solid $special-grey-darker;
+    box-shadow: inset 0 0 0 1px $special-grey-darker;
+  }
+
+  &:invalid:not(:focus):not(:placeholder-shown) {
+    border: 1px solid $Error-color;
+    box-shadow: inset 0 0 0 1px $Error-color;
+  }
+
+  @media (min-width: $tablet) {
+    padding: 10px 19px 12px;
+
+    @include fonts($font-size-m-100, $line-height-m-600);
+  }
+
+  &--contacts {
+    padding-right: 50px;
+  }
+
+  &--error {
+    border: 1px solid $Error-color;
+    box-shadow: inset 0 0 0 1px $Error-color;
+  }
+}

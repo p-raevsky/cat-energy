@@ -6,6 +6,14 @@
   background-color: $basic-green;
   border: none;
 
+  &:hover {
+    background-color: $basic-green-dark;
+  }
+
+  &:active {
+    color: $white-30;
+  }
+
   @media (max-width: $mobile-max) {
     width: 100%;
     padding: 7px 0;

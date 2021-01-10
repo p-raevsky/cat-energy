@@ -1,0 +1,41 @@
+.extra {
+  padding-bottom: 41px;
+
+  @media (min-width: $tablet) {
+    padding-bottom: 17px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 24px;
+  }
+}
+
+.extra__choice {
+  padding-top: 39px;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 62px;
+  }
+}
+
+.extra__item {
+  &:nth-child(2n+1) {
+    @media (min-width: $tablet) {
+      margin-right: 20%;
+    }
+
+    @media (min-width: $desktop) {
+      margin-right: 0;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    width: 40%;
+  }
+
+  @media (min-width: $desktop) {
+    width: 25%;
+  }
+}

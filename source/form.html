@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
     <header class="page__header">
@@ -56,19 +57,19 @@
             <label class="questionnaire__item data-item">
               <span class="data-item__text">Имя*:</span>
 
-              <input class="data-item__field visually-hidden" type="text" name="nickname" placeholder="Барсик" required>
+              <input class="data-item__field" type="text" pattern="^[А-Яа-яЁё\s]+$" name="nickname" placeholder="Барсик" required>
             </label>
 
             <label class="questionnaire__item data-item">
               <span class="data-item__text">Вес (кг):*</span>
 
-              <input class="data-item__field visually-hidden" type="text" name="weight" placeholder="7" required>
+              <input class="data-item__field" type="text" pattern="^[ 0-9]+$" name="weight" placeholder="7" required>
             </label>
 
             <label class="questionnaire__item data-item">
               <span class="data-item__text">Возраст (лет):</span>
 
-              <input class="data-item__field visually-hidden" type="text" name="age" placeholder="7">
+              <input class="data-item__field" type="text" pattern="^[ 0-9]+$" name="age" placeholder="7">
             </label>
           </div>
 
@@ -94,25 +95,45 @@
         </section>
 
         <section class="contacts">
-          <h2 class="contacts__title">Контактные данные (владельца кота)</h2>
+          <div class="title-line">
+            <div class="title-line__wrap">
+              <h2 class="title-line__title"><span>Контактные данные&nbsp;<br>(владельца кота)</span></h2>
+            </div>
+          </div>
 
           <div class="contacts__data container container--form">
-            <label class="contacts__item data-item">
-              <span class="data-item__text data-item__text--contacts data-item__text--contacts--email">E-mail:*</span>
+            <div class="contacts__item-wrap">
+              <label class="contacts__item data-item data-item--contacts">
+                <span class="data-item__text">E-mail:*</span>
 
-              <input class="data-item__field visually-hidden" type="email" name="email" placeholder="kuklachev@gmail.com" required>
-            </label>
+                <input class="data-item__field data-item__field--contacts data-item__field--contacts--email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+              </label>
 
-            <label class="contacts__item data-item">
-              <span class="data-item__text data-item__text--contacts data-item__text--contacts--tel">Телефон:*</span>
+              <svg class="contacts__icon contacts__icon--email" width="18" height="13" fill="#222222" role="img" aria-label="Иконка почты">
+                <use xlink:href="img/sprite.svg#icon-email-sprite"></use>
+              </svg>
+            </div>
 
-              <input class="data-item__field visually-hidden" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
-            </label>
+            <div class="contacts__item-wrap">
+              <label class="contacts__item data-item data-item--contacts">
+                  <span class="data-item__text">Телефон:*</span>
+
+                  <input class="data-item__field data-item__field--contacts data-item__field--contacts--tel" type="tel" name="tel" pattern="^[ 0-9\s\-\(\)]+$" placeholder="8 (960) 900-60-90" required>
+              </label>
+
+              <svg class="contacts__icon contacts__icon--tel" width="20" height="20" fill="#222222" role="img" aria-label="Иконка телефона">
+                <use xlink:href="img/sprite.svg#icon-tel-sprite"></use>
+              </svg>
+            </div>
           </div>
         </section>
 
         <section class="comment">
-          <h2 class="comment__title">Комментарий</h2>
+          <div class="title-line">
+            <div class="title-line__wrap">
+              <h2 class="title-line__title"><span>Комментарий</span></h2>
+            </div>
+          </div>
 
           <div class="comment__wrap container container--form">
             <label class="comment__item">
@@ -122,36 +143,40 @@
         </section>
 
         <section class="extra">
-          <h2 class="extra__title">Дополнительно</h2>
+          <div class="title-line">
+            <div class="title-line__wrap">
+              <h2 class="title-line__title"><span>Дополнительно</span></h2>
+            </div>
+          </div>
 
           <div class="extra__choice container container--form">
             <label class="extra__item choice-item">
-              <input class="choice-item__field visually-hidden" type="checkbox" name="extra-choice" value="Cахарозаменитель" checked>
+              <input class="choice-item__field choice-item__field--extra visually-hidden" type="checkbox" name="extra-choice" value="Cахарозаменитель" checked>
 
               <span class="choice-item__text choice-item__text--extra">Cахарозаменитель</span>
             </label>
 
             <label class="extra__item choice-item">
-              <input class="choice-item__field visually-hidden" type="checkbox" name="extra-choice" value="Питьевая вода">
+              <input class="choice-item__field choice-item__field--extra visually-hidden" type="checkbox" name="extra-choice" value="Питьевая вода">
 
               <span class="choice-item__text choice-item__text--extra">Питьевая вода</span>
             </label>
 
             <label class="extra__item choice-item">
-              <input class="choice-item__field visually-hidden" type="checkbox" name="extra-choice" value="Молоко">
+              <input class="choice-item__field choice-item__field--extra visually-hidden" type="checkbox" name="extra-choice" value="Молоко">
 
               <span class="choice-item__text choice-item__text--extra">Молоко</span>
             </label>
 
             <label class="extra__item choice-item">
-              <input class="choice-item__field visually-hidden" type="checkbox" name="extra-choice" value="Витамины">
+              <input class="choice-item__field choice-item__field--extra visually-hidden" type="checkbox" name="extra-choice" value="Витамины">
 
               <span class="choice-item__text choice-item__text--extra">Витамины</span>
             </label>
           </div>
         </section>
 
-        <div class="form__button container container--form">
+        <div class="form__button-wrap container container--form">
           <button class="form__button button" type="submit">Отправить заявку</button>
 
           <p class="form_required-field">* — Обязательные поля</p>
@@ -231,5 +256,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="js/script.min.js"></script>
   </body>
 </html>

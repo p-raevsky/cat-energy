@@ -169,12 +169,22 @@
     width: 24px;
     height: 12px;
 
-    background: url("../img/arrow.svg") no-repeat 0 0;
+    background: url("../img/arrow.svg") no-repeat 100% 0;
 
     @media (min-width: $tablet) {
       top: 8px;
       left: 126px;
     }
+  }
+
+  &:hover {
+    &::after {
+      width: 32px;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 
   @media (max-width: $mobile-max) {
