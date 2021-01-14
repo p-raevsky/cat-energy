@@ -13,6 +13,24 @@
     background-color: $basic-green;
     transform: translateY(-50%);
   }
+
+  &--catalog {
+    padding-top: 25px;
+    padding-bottom: 36px;
+
+    &::before {
+      top: 47%;
+    }
+
+    @media (min-width: $tablet) {
+      padding-top: 68px;
+      padding-bottom: 80px;
+    }
+
+    @media (min-width: $desktop) {
+      padding-top: 75px;
+    }
+  }
 }
 
 .title-line__wrap {

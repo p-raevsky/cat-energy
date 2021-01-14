@@ -16,7 +16,7 @@
 
   @media (max-width: $mobile-max) {
     width: 100%;
-    padding: 7px 0;
+    padding: 10px 0;
 
     @include fonts($font-size-s-300, $line-height-m-100);
   }
