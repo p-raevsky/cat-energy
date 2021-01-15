@@ -1,10 +1,40 @@
 .promo-catalog {
+  position: relative;
+
   width: 100%;
 
+  background-color: $basic-green;
   background-image: url("../img/gift-photo-small@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 65px;
+    left: 50%;
+
+    width: 57px;
+    height: 61px;
+
+    background: url("../img/icon-gift.svg") no-repeat 0 0;
+    transform: translateX(-50%);
+
+    @media (min-width: $tablet) {
+      top: 50%;
+      left: 89px;
+
+      transform: translate(0, -50%);
+    }
+
+    @media (min-width: $desktop) {
+      top: 65px;
+      left: 50%;
+
+      transform: translate(-50%, 0);
+    }
+  }
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/gift-photo-small@2x.jpg");
@@ -31,11 +61,8 @@
 }
 
 .promo-catalog__link {
-  position: relative;
-
   display: block;
-  width: 161px;
-  margin: 0 auto;
+  width: 100%;
   padding-top: 186px;
   padding-bottom: 43px;
 
@@ -44,37 +71,24 @@
 
   @include fonts($font-size-s-300, $line-height-m-100, $font-text, 400, none);
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 65px;
-    left: 50%;
-
-    width: 57px;
-    height: 61px;
-
-    background: url("../img/icon-gift.svg") no-repeat 0 0;
-    transform: translateX(-50%);
+  p {
+    width: 170px;
+    margin: 0 auto;
 
     @media (min-width: $tablet) {
-      top: 50%;
-      left: -23px;
-
-      transform: translate(0, -50%);
+      margin: 0;
+      padding-left: 55%;
     }
 
     @media (min-width: $desktop) {
-      top: 65px;
-      left: 50%;
-
-      transform: translate(-50%, 0);
+      margin: 0 auto;
+      padding-left: 0;
     }
   }
 
   @media (min-width: $tablet) {
     padding-top: 71px;
     padding-bottom: 69px;
-    padding-left: 326px;
 
     text-align: left;
   }

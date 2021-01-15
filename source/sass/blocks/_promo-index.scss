@@ -2,7 +2,7 @@
   background-color: $basic-grey;
 
   @media (max-width: $mobile-max) {
-    padding: 30px 20px 22px;
+    padding: 30px 20px 19px;
   }
 
   @media (min-width: $tablet) {
@@ -134,7 +134,7 @@
   margin-top: 0;
 
   @media (max-width: $mobile-max) {
-    margin-bottom: 19px;
+    margin-bottom: 15px;
     padding-bottom: 23px;
 
     border-bottom: 1px solid $special-grey-4;
@@ -157,13 +157,15 @@
   position: relative;
 
   display: block;
+  padding-top: 4px;
+  padding-bottom: 3px;
 
   color: $black;
 
   &::after {
     content: "";
     position: absolute;
-    top: 2px;
+    top: 5px;
     left: 100px;
 
     width: 24px;
@@ -188,12 +190,16 @@
   }
 
   @media (max-width: $mobile-max) {
-    padding-right: 146px;
+    width: 145px;
 
     @include fonts($font-size-s-300, $line-height-s-400);
   }
 
   @media (min-width: $tablet) {
+    width: 165px;
+    padding-top: 0;
+    padding-bottom: 0;
+
     @include fonts($font-size-m-100, $line-height-m-600);
   }
 }

@@ -27,6 +27,13 @@
 }
 
 .choice-item__field {
+  &:focus {
+    & + span {
+      border-radius: 0;
+      box-shadow: 0 1px 0 5px $white, 0 1px 0 7px $black;
+    }
+  }
+
   & + span::before,
   &:checked + span::after {
     content: "";

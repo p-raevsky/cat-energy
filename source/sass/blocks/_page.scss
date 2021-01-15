@@ -17,6 +17,7 @@
 .page__header {
   &--index {
     @media (min-width: $desktop) {
+      background: linear-gradient(to right, $white 0, $basic-green-85 0);
       background-image: url("../img/index-background-desktop@1x.jpg");
       background-repeat: no-repeat;
       background-position: 100% 0;

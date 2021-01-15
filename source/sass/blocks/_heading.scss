@@ -5,6 +5,7 @@
   text-align: center;
 
   @media (max-width: $mobile-max) {
+    background-color: $basic-green;
     background-image: url("../img/index-background@1x.jpg");
     background-repeat: no-repeat;
     background-position: 63% 0;

@@ -51,7 +51,7 @@
   @media (min-width: $tablet) {
     width: 220px;
 
-    @include fonts($font-size-m-100, $line-height-m-200);
+    @include fonts($font-size-m-100, $line-height-m-300);
   }
 }
 

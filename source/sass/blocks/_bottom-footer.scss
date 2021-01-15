@@ -63,6 +63,14 @@
   }
 }
 
+.bottom-footer__link {
+  padding: 9px;
+
+  &--fb {
+    padding: 11px 9px 6px;
+  }
+}
+
 .bottom-footer__image {
   &:hover {
     fill: $basic-green;

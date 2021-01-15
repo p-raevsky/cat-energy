@@ -1,13 +1,13 @@
-.copyright {
+.copyright__link {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 22px;
+  margin-top: 22px;
 
   @media (min-width: $tablet) {
     justify-content: flex-end;
     width: 200px;
-    padding-top: 0;
+    margin-top: 0;
   }
 
   &:active {

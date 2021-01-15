@@ -68,7 +68,7 @@
 
       background-color: $black;
       box-shadow: 0 8px 0  $black,
-        0 16px 0  $black;
+      0 16px 0  $black;
       transform: rotate(0deg);
     }
 
@@ -135,7 +135,7 @@
 
 .main-nav__item {
   width: 100%;
-  padding: 22px 24px;
+  padding: 17px 24px;
 
   border-bottom: 1px solid $basic-grey-4;
 
@@ -156,6 +156,7 @@
 
 .main-nav__link {
   display: block;
+  padding: 5px 0;
 
   color: $black;
 
