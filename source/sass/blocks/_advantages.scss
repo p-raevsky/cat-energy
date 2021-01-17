@@ -37,6 +37,7 @@
   @media (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin: 0;
     padding: 0;
 
@@ -74,7 +75,7 @@
       content: counter(myCounter);
       position: absolute;
       top: 33px;
-      left: 115px;
+      left: 113px;
 
       color: $basic-grey;
 
@@ -127,10 +128,14 @@
 
     @media (min-width: $tablet) {
       top: -111px;
-      left: 0;
+      left: -3px;
 
       width: 80px;
       height: 80px;
+    }
+
+    @media (min-width: $desktop) {
+      left: 0;
     }
   }
 
@@ -144,7 +149,11 @@
 
     @media (min-width: $tablet) {
       top: -87px;
-      left: 25px;
+      left: 21px;
+    }
+
+    @media (min-width: $desktop) {
+      left: 24px;
     }
   }
 
