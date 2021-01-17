@@ -266,7 +266,6 @@
 
     @media (min-width: $tablet) {
       bottom: 0;
-
       left: -44px;
 
       width: 590px;
@@ -279,7 +278,7 @@
       bottom: -1px;
       left: -40px;
 
-      clip: rect(auto,361px,auto,auto);
+      clip: rect(auto, 361px, auto, auto);
     }
 
     &--close {
@@ -304,7 +303,7 @@
     @media (min-width: $desktop) {
       right: -6px;
 
-      clip: rect(auto,auto,auto,270px);
+      clip: rect(auto, auto, auto, 270px);
     }
 
     &--close {
@@ -364,7 +363,7 @@
 
     border-bottom: 1px dotted $black-30;
 
-    @include fonts($font-size-m-100, $line-height-m-600);;
+    @include fonts($font-size-m-100, $line-height-m-600);
   }
 }
 
@@ -412,22 +411,22 @@
     background-color: $basic-green;
     border-radius: 50%;
     box-shadow: inset 0 0 0 12px $white,
-    0 0 0 1px $special-grey-2,
-    0 1px 3px $black-15;
+      0 0 0 1px $special-grey-2,
+      0 1px 3px $black-15;
     transform: translateX(-50%);
 
     transition-duration: 300ms;
 
     &:hover {
       box-shadow: inset 0 0 0 12px $white,
-      0 0 0 1px $special-grey-2,
-      0 2px 4px $black-15;
+        0 0 0 1px $special-grey-2,
+        0 2px 4px $black-15;
     }
 
     &:active {
       box-shadow: inset 0 0 0 12px $white,
-      0 0 0 1px $basic-green,
-      0 3px 5px $black-15;
+        0 0 0 1px $basic-green,
+        0 3px 5px $black-15;
     }
   }
 
