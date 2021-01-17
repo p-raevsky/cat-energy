@@ -2,11 +2,11 @@
   padding: 27px 0 32px;
 
   @media (min-width: $tablet) {
-    padding: 65px 0 72px;
+    padding: 63px 0 72px;
   }
 
   @media (min-width: $desktop) {
-    padding: 77px 0 82px;
+    padding: 74px 0 82px;
   }
 }
 
@@ -21,18 +21,22 @@
 
     @include fonts($font-size-b-200, $line-height-b-400, $font, 400, none);
   }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 57px;
+  }
 }
 
 .form__subtitle {
   width: 230px;
   margin-top: 0;
-  margin-bottom: 39px;
+  margin-bottom: 38px;
 
   @include fonts($font-size-s-200, $line-height-s-400);
 
   @media (min-width: $tablet) {
     width: 325px;
-    margin-bottom: 66px;
+    margin-bottom: 65px;
 
     @include fonts($font-size-m-100, $line-height-m-600);
   }
@@ -51,17 +55,25 @@
   margin-bottom: 21px;
 
   @media (min-width: $tablet) {
-    width: 36%;
+    width: 45%;
     max-width: 568px;
     margin-right: 61px;
     margin-bottom: 0;
+    padding: 16px;
   }
 
   @media (min-width: $desktop) {
+    width: 47%;
     margin-right: 81px;
   }
 }
 
 .form_required-field {
   margin: 0;
+
+  @include fonts($font-size-s-200, $line-height-s-300, $font-text, 400, none);
+
+  @media (min-width: $tablet) {
+    @include fonts($font-size-s-300, $line-height-s-300, $font-text, 400, none);
+  }
 }

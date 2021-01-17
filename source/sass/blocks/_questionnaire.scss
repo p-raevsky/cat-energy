@@ -20,27 +20,28 @@
   }
 
   @media (min-width: $desktop) {
-    width: 47%;
+    width: 570px;
     margin: 0;
     padding: 0;
   }
 }
 
 .questionnaire__choice {
-  padding: 28px 20px 25px;
+  padding: 24px 20px 25px;
 
   border-top: 1px solid $special-grey-4;
   border-bottom: 1px solid $special-grey-4;
 
   @media (min-width: $tablet) {
-    margin: 0 70px;
-    padding: 30px 0;
+    margin-right: 67px;
+    margin-left: 70px;
+    padding: 29px 0 6px;
 
     border: 1px solid $special-grey-4;
   }
 
   @media (min-width: $desktop) {
-    width: 47%;
+    width: 569px;
     margin: 0;
   }
 }

@@ -7,10 +7,10 @@
 }
 
 .comment__wrap {
-  padding-top: 38px;
+  padding-top: 36px;
 
   @media (min-width: $tablet) {
-    padding-top: 76px;
+    padding-top: 74px;
   }
 }
 
@@ -20,7 +20,7 @@
 
 .comment__field {
   flex-grow: 1;
-  height: 150px;
+  height: 130px;
   padding: 9px 12px 9px 15px;
 
   color: $special-grey-darker;
@@ -52,6 +52,7 @@
   }
 
   @media (min-width: $tablet) {
-    height: 174px;
+    height: 154px;
+    padding-left: 18px;
   }
 }

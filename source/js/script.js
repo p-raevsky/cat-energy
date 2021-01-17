@@ -7,6 +7,11 @@ var fieldContactsTel = document.querySelector('.data-item__field--contacts--tel'
 var fieldContactsEmail = document.querySelector('.data-item__field--contacts--email');
 var contactsIconTel = document.querySelector('.contacts__icon--tel');
 var contactsIconEmail = document.querySelector('.contacts__icon--email');
+var demoBtnBefore = document.querySelector('.demo__btn--before');
+var demoBtnAfter = document.querySelector('.demo__btn--after');
+var demoControl = document.querySelector('.demo__control');
+var demoImgAfter = document.querySelector('.demo__img--after');
+var demoImgBefore = document.querySelector('.demo__img--before');
 
 if (noJs.classList.contains('main-nav__toggle--nojs')) {
   navMain.classList.add('main-nav__list--closed');
@@ -54,5 +59,33 @@ if (fieldContactsEmail) {
       contactsIconEmail.classList.add('contacts__icon--email--disabled');
     }
     return;
+  });
+}
+
+if (demoBtnAfter) {
+  demoBtnAfter.addEventListener('click', function () {
+    demoControl.classList.add('demo__control--toggle');
+    demoControl.classList.add('demo__control--after');
+    demoControl.classList.remove('demo__control--before');
+    demoImgAfter.classList.remove('demo__img--close');
+    demoImgBefore.classList.add('demo__img--close');
+    demoImgAfter.classList.add('demo__img--after--full');
+    demoImgBefore.classList.add('demo__img--before--close');
+    demoImgBefore.classList.remove('demo__img--after--full');
+    demoImgAfter.classList.remove('demo__img--before--close');
+  });
+}
+
+if (demoBtnBefore) {
+  demoBtnBefore.addEventListener('click', function () {
+    demoControl.classList.remove('demo__control--toggle');
+    demoControl.classList.add('demo__control--before');
+    demoControl.classList.remove('demo__control--after');
+    demoImgAfter.classList.add('demo__img--close');
+    demoImgBefore.classList.remove('demo__img--close');
+    demoImgBefore.classList.add('demo__img--after--full');
+    demoImgAfter.classList.add('demo__img--before--close');
+    demoImgAfter.classList.remove('demo__img--after--full');
+    demoImgBefore.classList.remove('demo__img--before--close');
   });
 }

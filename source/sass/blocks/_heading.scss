@@ -19,6 +19,10 @@
   @media (min-width: $tablet) {
     text-align: start;
   }
+
+  @media (min-width: $desktop) {
+    min-height: 581px;
+  }
 }
 
 .heading__wrap {
@@ -44,13 +48,15 @@
 
   @media (min-width: $tablet) {
     padding-top: 62px;
-    padding-left: 80px;
+    padding-left: 87px;
 
     text-align: left;
   }
 
   @media (min-width: $desktop) {
     padding-top: 0;
+    padding-bottom: 22px;
+    padding-left: 81px;
   }
 }
 
@@ -89,27 +95,37 @@
 
     @include fonts($font-size-m-100, $line-height-m-100);
   }
+
+  @media (min-width: $desktop) {
+    width: 420px;
+  }
 }
 
 .heading__sample-img {
+  display: block;
+
   object-fit: cover;
 
   @media (min-width: $tablet) {
     width: 709px;
     height: 609px;
-    margin-top: -75px;
+    margin-top: -83px;
   }
 
   @media (min-width: $desktop) {
-    width: 552px;
+    width: 605px;
     height: 499px;
-    margin-top: 32px;
-    margin-left: -68px;
+    margin-top: 28px;
+    margin-left: -53px;
   }
 }
 
 .heading__button {
+  padding: 11px 0;
+
   text-align: center;
+
+  @include fonts($font-size-s-200, $line-height-s-400);
 
   @media (max-width: $mobile-max) {
     position: absolute;
@@ -119,5 +135,13 @@
 
   @media (min-width: $tablet) {
     width: 244px;
+    margin-left: -5px;
+    padding: 17px 0;
+
+    @include fonts($font-size-m-100, $line-height-m-100);
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: -1px;
   }
 }

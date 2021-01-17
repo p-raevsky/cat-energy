@@ -7,17 +7,22 @@
   @media (min-width: $tablet) {
     display: flex;
     justify-content: space-between;
-    padding-top: 57px;
+    padding-top: 54px;
     padding-bottom: 59px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 57px;
   }
 }
 
 .bottom-footer__logo {
   display: block;
-  margin-bottom: 32px;
+  margin-bottom: 27px;
 
   @media (min-width: $tablet) {
     margin-bottom: 0;
+    padding-top: 6px;
   }
 
   &:hover {
@@ -38,10 +43,11 @@
   border-top: 1px solid $special-grey-4;
   border-bottom: 1px solid $special-grey-4;
 
-  @include list(0, 20px 0);
+  @include list(0, 20px 0 16px);
 
   @media (min-width: $tablet) {
-    padding: 0 20px;
+    padding: 0;
+    padding-left: 25px;
 
     border: 0;
   }
@@ -59,7 +65,11 @@
   }
 
   &:not(:last-child) {
-    margin-right: 10px;
+    margin-right: 14px;
+
+    @media (min-width: $tablet) {
+      margin-right: 11px;
+    }
   }
 }
 
@@ -68,6 +78,10 @@
 
   &--fb {
     padding: 11px 9px 6px;
+  }
+
+  @media (min-width: $tablet) {
+    padding: 9px 0;
   }
 }
 
@@ -78,5 +92,26 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  &--vk {
+    @media (min-width: $tablet) {
+      width: 29px;
+      height: 21px;
+    }
+  }
+
+  &--insta {
+    @media (min-width: $tablet) {
+      width: 23px;
+      height: 23px;
+    }
+  }
+
+  &--fb {
+    @media (min-width: $tablet) {
+      width: 32px;
+      height: 32px;
+    }
   }
 }

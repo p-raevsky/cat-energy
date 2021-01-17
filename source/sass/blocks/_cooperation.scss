@@ -10,11 +10,11 @@
   position: relative;
 
   padding-top: 28px;
-  padding-bottom: 28px;
+  padding-bottom: 26px;
 
   @media (min-width: $tablet) {
     padding-top: 65px;
-    padding-bottom: 52px;
+    padding-bottom: 56px;
   }
 
   @media (min-width: $desktop) {
@@ -29,13 +29,13 @@
 
   @media (min-width: $desktop) {
     position: absolute;
-    top: 97px;
+    top: 95px;
     z-index: 3;
 
-    width: 417px;
+    width: 405px;
     padding-top: 64px;
     padding-right: 89px;
-    padding-bottom: 58px;
+    padding-bottom: 57px;
     padding-left: 76px;
 
     background-color: $white;
@@ -46,12 +46,12 @@
   width: 140px;
   margin: 0;
 
-  @include fonts($font-size-s-300, $line-height-s-400);
+  @include fonts($font-size-s-300, $line-height-m-100);
 
   @media (min-width: $tablet) {
     width: 220px;
 
-    @include fonts($font-size-m-100, $line-height-m-300);
+    @include fonts($font-size-m-100, $line-height-m-500);
   }
 }
 

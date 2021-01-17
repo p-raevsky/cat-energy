@@ -1,17 +1,17 @@
 .demo {
-  padding: 27px 20px 28px;
+  padding: 27px 20px 33px;
 
   background-color: $basic-grey;
 
   @media (min-width: $tablet) {
-    padding: 43px 0 70px;
+    padding: 43px 0 68px;
 
     background: linear-gradient(to bottom, $white 58%, $basic-grey 58%);
     border-top: 1px solid $basic-grey-4;
   }
 
   @media (min-width: $desktop) {
-    padding: 69px 0 0;
+    padding: 64px 0 0;
 
     background: none;
     background-color: $white;
@@ -47,6 +47,10 @@
   @media (min-width: $tablet) {
     @include fonts($font-size-b-200, $line-height-b-400, $font, 400, none);
   }
+
+  @media (min-width: $desktop) {
+    width: 700px;
+  }
 }
 
 .demo__term-wrap {
@@ -61,19 +65,22 @@
 
 .demo__desc-wrap {
   @media (min-width: $tablet) {
-    padding: 0 30px 59px;
+    padding: 0 30px 54px;
   }
 
   @media (min-width: $desktop) {
     max-width: 1220px;
     margin: 0 auto;
     padding-top: 70px;
+    padding-bottom: 74px;
+
+    background: linear-gradient(to right, #f2f2f2 75%, #eaeaea 75%);
   }
 }
 
 .demo__desc {
   margin: 0;
-  margin-bottom: 26px;
+  margin-bottom: 25px;
 
   @include fonts($font-size-s-200, $line-height-s-400, $font-text, 400, none);
 
@@ -111,7 +118,7 @@
   @include list;
 
   @media (min-width: $desktop) {
-    margin-bottom: 55px;
+    margin-bottom: 52px;
   }
 }
 
@@ -120,7 +127,7 @@
 
   display: inline-block;
   width: 94px;
-  padding: 14px 14px 18px;
+  padding: 13px 14px 17px;
 
   text-align: center;
 
@@ -129,13 +136,9 @@
 
   @include fonts($font-size-m-200, $line-height-m-400);
 
-  @media (min-width: $tablet) {
-    width: 134px;
-  }
-
   small {
     position: absolute;
-    bottom: -14px;
+    bottom: -16px;
     left: 50%;
 
     padding: 0 13px;
@@ -143,7 +146,7 @@
     background-color: $basic-grey;
     transform: translateX(-50%);
 
-    @include fonts($font-size-s-100, $line-height-s-100, $font-text, 400, none);
+    @include fonts($font-size-s-100, $line-height-s-100, $font-text, 400, lowercase);
 
     @media (min-width: $tablet) {
       bottom: -7px;
@@ -151,6 +154,8 @@
       width: max-content;
 
       background-color: $white;
+
+      @include fonts($font-size-s-200, $line-height-s-200, $font-text, 400, lowercase);
     }
 
     @media (min-width: $desktop) {
@@ -159,18 +164,25 @@
   }
 
   &:first-child {
-    margin-right: 27px;
+    margin-right: 32px;
+
+    @media (min-width: $tablet) {
+      margin-right: 42px;
+    }
   }
 
   @media (min-width: $tablet) {
+    width: 132px;
+    padding-bottom: 20px;
+
     @include fonts($font-size-m-300, $line-height-b-200);
   }
 }
 
 .demo__cost {
   margin: 0;
-  margin-bottom: 46px;
-  padding-top: 30px;
+  margin-bottom: 42px;
+  padding-top: 34px;
 
   @include fonts($font-size-s-200, $line-height-m-100);
 
@@ -196,6 +208,10 @@
   margin: 0;
 
   &--value {
+    @media (min-width: $tablet) {
+      padding-top: 9px;
+    }
+
     @media (min-width: $desktop) {
       padding-left: 63px;
     }
@@ -220,7 +236,7 @@
 
     width: 590px;
     margin: 0 auto;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     padding-top: 549px;
   }
 
@@ -232,7 +248,7 @@
 }
 
 .demo__img {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 
   object-fit: cover;
 
@@ -246,13 +262,32 @@
   }
 
   &--before {
+    margin-left: -9px;
+
     @media (min-width: $tablet) {
       bottom: 0;
+
       left: -44px;
 
       width: 590px;
+      margin-left: 0;
 
       clip: rect(auto, 338px, auto, auto);
+    }
+
+    @media (min-width: $desktop) {
+      bottom: -1px;
+      left: -40px;
+
+      clip: rect(auto,361px,auto,auto);
+    }
+
+    &--close {
+      display: none;
+    }
+
+    &--full {
+      clip: rect(auto, auto, auto, auto);
     }
   }
 
@@ -264,6 +299,20 @@
       width: 545px;
 
       clip: rect(auto, auto, auto, 247px);
+    }
+
+    @media (min-width: $desktop) {
+      right: -6px;
+
+      clip: rect(auto,auto,auto,270px);
+    }
+
+    &--close {
+      display: none;
+    }
+
+    &--full {
+      clip: rect(auto, auto, auto, auto);
     }
   }
 
@@ -282,26 +331,27 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 207px;
+  width: 229px;
   margin: 0 auto;
+  padding-left: 4px;
 
   @media (min-width: $tablet) {
-    width: 572px;
+    width: 618px;
+    padding-left: 0;
   }
 
   @media (min-width: $desktop) {
     position: absolute;
-    bottom: -70px;
+    bottom: -75px;
 
-    padding-top: 100px;
-    padding-bottom: 70px;
-
-    background: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
+    width: 622px;
+    padding-bottom: 72px;
+    padding-left: 12px;
   }
 }
 
 .demo__btn {
-  padding: 3px 13px;
+  padding: 3px 16px;
 
   background-color: transparent;
   border: none;
@@ -309,7 +359,8 @@
   @include fonts($font-size-s-300, $line-height-m-100);
 
   @media (min-width: $tablet) {
-    padding: 0 24px;
+    margin: 0 24px;
+    padding: 0;
 
     border-bottom: 1px dotted $black-30;
 
@@ -338,7 +389,7 @@
 .demo__control {
   width: 35px;
   height: 6px;
-  margin: 4px 6px;
+  margin: 3px 7px;
 
   background-color: $basic-green;
   border-radius: 6px;
@@ -365,6 +416,8 @@
     0 1px 3px $black-15;
     transform: translateX(-50%);
 
+    transition-duration: 300ms;
+
     &:hover {
       box-shadow: inset 0 0 0 12px $white,
       0 0 0 1px $special-grey-2,
@@ -375,6 +428,18 @@
       box-shadow: inset 0 0 0 12px $white,
       0 0 0 1px $basic-green,
       0 3px 5px $black-15;
+    }
+  }
+
+  &--before {
+    @media (min-width: $tablet) {
+      left: 0;
+    }
+  }
+
+  &--after {
+    @media (min-width: $tablet) {
+      left: 100%;
     }
   }
 }

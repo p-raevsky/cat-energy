@@ -2,11 +2,11 @@
   background-color: $basic-grey;
 
   @media (max-width: $mobile-max) {
-    padding: 30px 20px 19px;
+    padding: 30px 20px 17px;
   }
 
   @media (min-width: $tablet) {
-    padding: 77px 40% 53px 52px;
+    padding: 77px 40% 57px 52px;
   }
 
   @media (min-width: $desktop) {
@@ -22,8 +22,8 @@
   &::before {
     content: "";
     position: absolute;
-    top: -5px;
-    left: 0;
+    top: -6px;
+    left: 2px;
 
     width: 50px;
     height: 50px;
@@ -32,8 +32,8 @@
     border-radius: 50%;
 
     @media (min-width: $tablet) {
-      top: 5px;
-      right: -225px;
+      top: 15px;
+      right: -222px;
       left: auto;
 
       width: 200px;
@@ -42,7 +42,7 @@
 
     @media (min-width: $desktop) {
       top: -30px;
-      left: 0;
+      left: 1px;
 
       width: 100px;
       height: 100px;
@@ -56,8 +56,8 @@
   }
 
   &--slim::after {
-    top: -7px;
-    left: 7px;
+    top: -9px;
+    left: 9px;
 
     width: 36px;
     height: 50px;
@@ -66,7 +66,7 @@
     background-size: contain;
 
     @media (min-width: $tablet) {
-      top: -7px;
+      top: 4px;
       right: -192px;
       left: auto;
 
@@ -75,8 +75,8 @@
     }
 
     @media (min-width: $desktop) {
-      top: -33px;
-      left: 15px;
+      top: -36px;
+      left: 16px;
 
       width: 70px;
       height: 97px;
@@ -84,8 +84,8 @@
   }
 
   &--plump::after {
-    top: 6px;
-    left: -10px;
+    top: 5px;
+    left: -7px;
 
     width: 67px;
     height: 28px;
@@ -94,8 +94,8 @@
     background-size: contain;
 
     @media (min-width: $tablet) {
-      top: 51px;
-      right: -252px;
+      top: 58px;
+      right: -255px;
       left: auto;
 
       width: 268px;
@@ -103,8 +103,8 @@
     }
 
     @media (min-width: $desktop) {
-      top: -11px;
-      left: -19px;
+      top: -10px;
+      left: -18px;
 
       width: 134px;
       height: 56px;
@@ -135,7 +135,7 @@
 
   @media (max-width: $mobile-max) {
     margin-bottom: 15px;
-    padding-bottom: 23px;
+    padding-bottom: 22px;
 
     border-bottom: 1px solid $special-grey-4;
 
@@ -143,13 +143,23 @@
   }
 
   @media (min-width: $tablet) {
-    margin-bottom: 48px;
+    margin-bottom: 52px;
 
     @include fonts($font-size-s-300, $line-height-m-400, $font-text, 400, none);
   }
 
   @media (min-width: $desktop) {
-    margin-bottom: 23px;
+    margin-bottom: 28px;
+  }
+
+  &--second {
+    @media (min-width: $tablet) {
+      width: 92%;
+    }
+
+    @media (min-width: $desktop) {
+      width: 100%;
+    }
   }
 }
 
@@ -158,6 +168,7 @@
 
   display: block;
   padding-top: 4px;
+  padding-right: 5px;
   padding-bottom: 3px;
 
   color: $black;
@@ -165,17 +176,21 @@
   &::after {
     content: "";
     position: absolute;
-    top: 5px;
+    top: 49%;
     left: 100px;
 
     width: 24px;
     height: 12px;
 
     background: url("../img/arrow.svg") no-repeat 100% 0;
+    transform: translateY(-50%);
 
     @media (min-width: $tablet) {
-      top: 8px;
-      left: 126px;
+      left: 131px;
+    }
+
+    @media (min-width: $desktop) {
+      left: 134px;
     }
   }
 
@@ -190,13 +205,13 @@
   }
 
   @media (max-width: $mobile-max) {
-    width: 145px;
+    width: 95px;
 
     @include fonts($font-size-s-300, $line-height-s-400);
   }
 
   @media (min-width: $tablet) {
-    width: 165px;
+    width: 120px;
     padding-top: 0;
     padding-bottom: 0;
 

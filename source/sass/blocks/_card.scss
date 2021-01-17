@@ -9,10 +9,14 @@
   border-bottom: 1px solid #ebebeb;
 
   @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 324px;
     padding: 0;
     padding-top: 78px;
 
+    background-image: linear-gradient(to bottom, $white 50%, $basic-grey 50%);
     border-bottom: none;
   }
 
@@ -21,7 +25,7 @@
   }
 
   &--last {
-    padding-top: 78px;
+    padding-top: 79px;
 
     text-align: center;
 
@@ -39,35 +43,41 @@
       transform: translateX(-50%);
 
       @media (min-width: $tablet) {
-        top: 52px;
+        top: 51px;
 
         width: 60px;
         height: 60px;
 
         background: url("../img/icon-plus-big.svg") no-repeat 0 0;
       }
+
+      @media (min-width: $desktop) {
+        top: 50px;
+
+        transform: translateX(-52%);
+      }
     }
 
     @media (min-width: $tablet) {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
       width: 246px;
       margin-top: 81px;
-      padding: 161px 38px 40px;
+      padding: 159px 38px 36px;
 
+      background-image: linear-gradient(to bottom, $white 50%, $white 50%);
       border: 1px solid $basic-grey;
     }
 
     @media (min-width: $desktop) {
       width: 167px;
+      margin-top: 79px;
+      padding-bottom: 39px;
     }
   }
 }
 
 .card__desc-wrap {
   @media (min-width: $tablet) {
-    padding: 161px 38px 40px;
+    padding: 157px 38px 40px;
 
     background-color: $basic-grey;
   }
@@ -78,7 +88,7 @@
 
   width: 140px;
   margin-left: 50%;
-  padding-bottom: 22px;
+  padding-bottom: 23px;
 
   @media (min-width: $tablet) {
     width: 100%;
@@ -89,8 +99,8 @@
 
 .card__img-link {
   position: absolute;
-  top: 10px;
-  left: -44%;
+  top: 16px;
+  left: -50%;
 
   display: block;
   width: max-content;
@@ -98,10 +108,14 @@
   transform: translateX(-50%);
 
   @media (min-width: $tablet) {
-    top: -240px;
+    top: -232px;
     left: 50%;
 
     transform: translateX(-50%);
+  }
+
+  @media (min-width: $desktop) {
+    top: -244px;
   }
 
   img {
@@ -116,10 +130,14 @@
   }
 
   &--small {
-    top: 28px;
+    top: 32px;
 
     @media (min-width: $tablet) {
-      top: -210px;
+      top: -202px;
+    }
+
+    @media (min-width: $desktop) {
+      top: -209px;
     }
 
     img {
@@ -132,7 +150,7 @@
 
   &--first {
     @media (max-width: $mobile-max) {
-      top: 10px;
+      top: 19px;
     }
   }
 }
@@ -148,19 +166,38 @@
 
   @include fonts($font-size-s-300, $line-height-m-100);
 
-  &--last {
-    width: 100%;
-    margin-bottom: 8px;
+  @media (min-width: $tablet) {
+    width: 130px;
+    margin: 0 auto;
+    margin-bottom: 7px;
 
     text-align: center;
+
+    @include fonts($font-size-m-100, $line-height-m-400);
   }
 
-  @media (min-width: $tablet) {
-    width: 125px;
-    margin: 0 auto;
-    margin-bottom: 16px;
+  @media (min-width: $desktop) {
+    margin-bottom: 11px;
+
+    @include fonts($font-size-m-100, $line-height-m-300);
+  }
+
+  &--last {
+    width: 100%;
+    margin-bottom: 7px;
+    padding: 0;
 
     text-align: center;
+
+    @media (min-width: $tablet) {
+      width: 70%;
+      margin-bottom: 21px;
+    }
+
+    @media (min-width: $desktop) {
+      width: 90%;
+      margin-bottom: 24px;
+    }
   }
 }
 
@@ -170,13 +207,14 @@
   margin: 0;
 
   @media (min-width: $tablet) {
-    padding: 7px 0 9px;
+    padding: 7px 0 6px;
 
     border-bottom: 1px solid $basic-grey-3;
   }
 }
 
 .card__text {
+  text-align: left;
   color: $special-grey-darker;
 
   @include fonts($font-size-s-100, $line-height-s-300, $font-text, 400, none);
@@ -185,11 +223,16 @@
     margin-top: 0;
     margin-bottom: 21px;
 
+    text-align: center;
+
     @media (min-width: $tablet) {
       width: 170px;
       margin: 0 auto;
-      margin-bottom: auto;
     }
+  }
+
+  &--second {
+    text-align: right;
   }
 
   @media (min-width: $tablet) {
@@ -198,7 +241,7 @@
 }
 
 .card__button {
-  padding: 10px 0;
+  padding: 10px 0 9px;
 
   @include fonts($font-size-s-300, $line-height-m-100);
 
@@ -214,5 +257,9 @@
     &:active {
       color: $special-grey-darker-30;
     }
+  }
+
+  @media (min-width: $tablet) {
+    margin-top: auto;
   }
 }

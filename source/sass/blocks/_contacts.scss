@@ -1,17 +1,21 @@
 .contacts {
-  padding: 26px 0 24px;
+  padding: 23px 0 10px;
 
   @media (min-width: $tablet) {
     padding-top: 0;
-    padding-bottom: 65px;
+    padding-bottom: 45px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 67px;
   }
 }
 
 .contacts__data {
-  padding-top: 35px;
+  padding-top: 33px;
 
   @media (min-width: $tablet) {
-    padding-top: 76px;
+    padding-top: 74px;
   }
 
   @media (min-width: $desktop) {
@@ -25,7 +29,7 @@
   position: relative;
 
   @media (min-width: $desktop) {
-    width: 47%;
+    width: 572px;
   }
 }
 
@@ -37,7 +41,12 @@
     right: 14px;
 
     @media (min-width: $tablet) {
-      top: 20px;
+      top: 19px;
+      right: 17px;
+    }
+
+    @media (min-width: $desktop) {
+      right: 21px;
     }
 
     &--error {
@@ -68,7 +77,8 @@
     right: 11px;
 
     @media (min-width: $tablet) {
-      top: 17px;
+      top: 16px;
+      right: 16px;
     }
 
 

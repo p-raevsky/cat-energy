@@ -9,6 +9,10 @@
   width: 100%;
 
   object-fit: cover;
+
+  @media (min-width: $tablet) {
+    height: 400px;
+  }
 }
 
 .map__iframe {
@@ -24,18 +28,24 @@
 
 .map__pin {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 46%;
+  left: 51%;
 
-  transform: translate(-50%, -50%);
+  transform: translate(-52%, -53%);
 
   @media (min-width: $tablet) {
+    top: 50%;
+
     width: 113px;
     height: 106px;
+
+    transform: translate(-52%, -52%);
   }
 
   @media (min-width: $desktop) {
     top: 46%;
     left: 67%;
+
+    transform: translate(-50%,-50%);
   }
 }

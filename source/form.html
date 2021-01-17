@@ -57,19 +57,19 @@
 
           <div class="questionnaire__data container container--form">
             <label class="questionnaire__item data-item">
-              <span class="data-item__text">Имя*:</span>
+              <span class="data-item__text">Имя:*<span></span></span>
 
               <input class="data-item__field" type="text" pattern="^[А-Яа-яЁё\s]+$" name="nickname" placeholder="Барсик" required>
             </label>
 
             <label class="questionnaire__item data-item">
-              <span class="data-item__text">Вес (кг):*</span>
+              <span class="data-item__text">Вес (кг):*<span></span></span>
 
               <input class="data-item__field" type="text" pattern="^[ 0-9]+$" name="weight" placeholder="7" required>
             </label>
 
             <label class="questionnaire__item data-item">
-              <span class="data-item__text">Возраст (лет):</span>
+              <span class="data-item__text">Возраст (лет):<span></span></span>
 
               <input class="data-item__field" type="text" pattern="^[ 0-9]+$" name="age" placeholder="7">
             </label>
@@ -97,7 +97,7 @@
         </section>
 
         <section class="contacts">
-          <div class="title-line">
+          <div class="title-line title-line--contacts">
             <div class="title-line__wrap">
               <h2 class="title-line__title"><span>Контактные данные&nbsp;<br>(владельца кота)</span></h2>
             </div>
@@ -106,7 +106,7 @@
           <div class="contacts__data container container--form">
             <div class="contacts__item-wrap">
               <label class="contacts__item data-item data-item--contacts">
-                <span class="data-item__text">E-mail:*</span>
+                <span class="data-item__text data-item__text--contacts">E-mail:*<span></span></span>
 
                 <input class="data-item__field data-item__field--contacts data-item__field--contacts" type="email" name="email" placeholder="kuklachev@gmail.com" required>
               </label>
@@ -118,7 +118,7 @@
 
             <div class="contacts__item-wrap">
               <label class="contacts__item data-item data-item--contacts">
-                  <span class="data-item__text">Телефон:*</span>
+                  <span class="data-item__text data-item__text--contacts">Телефон:*<span></span></span>
 
                   <input class="data-item__field data-item__field--contacts data-item__field--contacts" type="tel" name="tel" pattern="^[ 0-9\s\-\(\)]+$" placeholder="8 (960) 900-60-90" required>
               </label>
@@ -152,25 +152,25 @@
           </div>
 
           <div class="extra__choice container container--form">
-            <label class="extra__item choice-item">
+            <label class="extra__item choice-item choice-item--extra">
               <input class="choice-item__field choice-item__field--extra visually-hidden" type="checkbox" name="extra-choice" value="Cахарозаменитель" checked>
 
               <span class="choice-item__text choice-item__text--extra">Cахарозаменитель</span>
             </label>
 
-            <label class="extra__item choice-item">
+            <label class="extra__item choice-item choice-item--extra">
               <input class="choice-item__field choice-item__field--extra visually-hidden" type="checkbox" name="extra-choice" value="Питьевая вода">
 
               <span class="choice-item__text choice-item__text--extra">Питьевая вода</span>
             </label>
 
-            <label class="extra__item choice-item">
+            <label class="extra__item choice-item choice-item--extra">
               <input class="choice-item__field choice-item__field--extra visually-hidden" type="checkbox" name="extra-choice" value="Молоко">
 
               <span class="choice-item__text choice-item__text--extra">Молоко</span>
             </label>
 
-            <label class="extra__item choice-item">
+            <label class="extra__item choice-item choice-item--extra">
               <input class="choice-item__field choice-item__field--extra visually-hidden" type="checkbox" name="extra-choice" value="Витамины">
 
               <span class="choice-item__text choice-item__text--extra">Витамины</span>
@@ -190,7 +190,7 @@
       <section class="footer__cooperation cooperation">
         <div class="cooperation__wrap container container--tab">
           <div class="cooperation__inner-wrap">
-            <h2 class="cooperation__title">Приглашаем к сотрудничеству дилеров!</h2>
+            <h2 class="cooperation__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
 
             <div class="cooperation__text-wrap">
               <p class="cooperation__text cooperation__text--address">ул. Большая Конюшенная, д. 19/8</p>
@@ -235,7 +235,7 @@
         <ul class="bottom-footer__list" aria-label="Список ссылок на социальные сети">
           <li class="bottom-footer__item">
             <a class="bottom-footer__link bottom-footer__link--vk" href="#">
-              <svg class="bottom-footer__image" width="23" height="16" fill="#666666" role="img" aria-label="Вконтакте">
+              <svg class="bottom-footer__image bottom-footer__image--vk" width="23" height="16" fill="#666666" role="img" aria-label="Вконтакте">
                 <use xlink:href="img/sprite.svg#icon-vkontakte-sprite"></use>
               </svg>
             </a>
@@ -243,7 +243,7 @@
 
           <li class="bottom-footer__item">
             <a class="bottom-footer__link bottom-footer__link--insta" href="#">
-              <svg class="bottom-footer__image" width="16" height="16" fill="#666666" role="img" aria-label="Инстаграм">
+              <svg class="bottom-footer__image bottom-footer__image--insta" width="16" height="16" fill="#666666" role="img" aria-label="Инстаграм">
                 <use xlink:href="img/sprite.svg#icon-instagram-sprite"></use>
               </svg>
             </a>
@@ -251,7 +251,7 @@
 
           <li class="bottom-footer__item">
             <a class="bottom-footer__link bottom-footer__link--fb" href="#">
-              <svg class="bottom-footer__image" width="22" height="22" fill="#666666" role="img" aria-label="Фейсбук">
+              <svg class="bottom-footer__image bottom-footer__image--fb" width="22" height="22" fill="#666666" role="img" aria-label="Фейсбук">
                 <use xlink:href="img/sprite.svg#icon-facebook-sprite"></use>
               </svg>
             </a>

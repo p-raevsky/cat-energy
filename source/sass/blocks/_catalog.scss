@@ -3,23 +3,24 @@
   padding-bottom: 35px;
 
   @media (min-width: $tablet) {
-    padding-top: 65px;
-    padding-bottom: 76px;
+    padding-top: 63px;
+    padding-bottom: 74px;
   }
 
   @media (min-width: $desktop) {
-    padding-top: 86px;
+    padding-top: 76px;
+    padding-bottom: 86px;
   }
 }
 
 .catalog__title-main {
   margin-top: 0;
-  margin-bottom: 41px;
+  margin-bottom: 40px;
 
   @include fonts($font-size-b-100, $line-height-b-100, $font, 400, none);
 
   @media (min-width: $tablet) {
-    margin-bottom: 83px;
+    margin-bottom: 86px;
 
     @include fonts($font-size-b-200, $line-height-b-400, $font, 400, none);
   }
@@ -43,7 +44,8 @@
     justify-content: center;
     margin: 0 auto;
 
-    gap: 60px;
+    grid-column-gap: 60px;
+    grid-row-gap: 62px;
     grid-template-columns: repeat(2, 324px);
   }
 
@@ -53,7 +55,7 @@
 
   @media (min-width: $desktop) {
     grid-column-gap: 80px;
-    grid-row-gap: 63px;
+    grid-row-gap: 66px;
     grid-template-columns: repeat(4, 1fr);
   }
 }

@@ -1,5 +1,5 @@
 .extra {
-  padding-bottom: 41px;
+  padding-bottom: 37px;
 
   @media (min-width: $tablet) {
     padding-bottom: 17px;
@@ -11,19 +11,23 @@
 }
 
 .extra__choice {
-  padding-top: 39px;
+  padding-top: 37px;
 
   @media (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 62px;
+    padding-top: 59px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 61px;
   }
 }
 
 .extra__item {
   &:nth-child(2n+1) {
     @media (min-width: $tablet) {
-      margin-right: 20%;
+      margin-right: 10%;
     }
 
     @media (min-width: $desktop) {
@@ -32,10 +36,17 @@
   }
 
   @media (min-width: $tablet) {
-    width: 40%;
+    width: 35%;
+    margin-bottom: 42px;
   }
 
   @media (min-width: $desktop) {
-    width: 25%;
+    width: 15%;
+  }
+
+  &:not(:last-child) {
+    @media (min-width: $desktop) {
+      padding-right: 82px;
+    }
   }
 }

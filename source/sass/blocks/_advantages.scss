@@ -1,5 +1,5 @@
 .advantages__wrap {
-  padding-bottom: 46px;
+  padding-bottom: 43px;
 
   @media (max-width: $mobile-max) {
     padding-top: 27px;
@@ -7,6 +7,7 @@
 
   @media (min-width: $tablet) {
     padding-top: 45px;
+    padding-bottom: 39px;
   }
 
   @media (min-width: $desktop) {
@@ -17,7 +18,7 @@
 
 .advantages__title {
   margin-top: 0;
-  margin-bottom: 38px;
+  margin-bottom: 40px;
 
   @include fonts($font-size-b-100, $line-height-b-300, $font, 400, none);
 
@@ -47,7 +48,7 @@
   position: relative;
 
   min-height: 57px;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
   padding-left: 80px;
 
   @include fonts($font-size-s-200, $line-height-s-400, $font-text, 400, none);
@@ -58,7 +59,7 @@
 
   &:nth-child(2n+1) {
     @media (min-width: $tablet) and (max-width: $tablet-max) {
-      padding-right: 40px;
+      padding-right: 63px;
     }
   }
 
@@ -72,7 +73,7 @@
     @media (min-width: $tablet) {
       content: counter(myCounter);
       position: absolute;
-      top: 36px;
+      top: 33px;
       left: 115px;
 
       color: $basic-grey;
@@ -85,7 +86,7 @@
 
   @media (min-width: $tablet) {
     width: 249px;
-    margin-right: 12%;
+    margin-right: 10%;
     margin-bottom: 0;
     padding-top: 183px;
     padding-left: 0;
@@ -96,9 +97,9 @@
   }
 
   @media (min-width: $desktop) {
-    width: 21%;
+    width: 245px;
     margin-right: 0;
-    padding-right: 65px;
+    padding-right: 80px;
   }
 }
 
@@ -107,11 +108,17 @@
 
   margin: 0;
 
+  br {
+    @media (max-width: $mobile-max) {
+      display: none;
+    }
+  }
+
   &::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: -79px;
+    top: -2px;
+    left: -80px;
 
     width: 60px;
     height: 60px;
@@ -119,7 +126,7 @@
     background-color: $basic-green;
 
     @media (min-width: $tablet) {
-      top: -107px;
+      top: -111px;
       left: 0;
 
       width: 80px;
@@ -130,14 +137,14 @@
   &::after {
     content: "";
     position: absolute;
-    top: 14px;
+    top: 11px;
     left: -65px;
 
     background-size: cover;
 
     @media (min-width: $tablet) {
-      top: -84px;
-      left: 24px;
+      top: -87px;
+      left: 25px;
     }
   }
 
@@ -172,6 +179,6 @@
   @media (min-width: $tablet) {
     z-index: 3;
 
-    padding-bottom: 50px;
+    padding-bottom: 63px;
   }
 }

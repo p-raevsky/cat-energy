@@ -11,7 +11,17 @@
     padding: 0 30px;
   }
 
-  &--form,
+  &--form {
+    @media (min-width: $tablet) {
+      padding-right: 67px;
+      padding-left: 70px;
+    }
+
+    @media (min-width: $desktop) {
+      padding: 0 30px;
+    }
+  }
+
   &--tab {
     @media (min-width: $tablet) {
       padding: 0 70px;

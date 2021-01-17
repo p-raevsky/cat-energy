@@ -2,27 +2,31 @@
   position: relative;
 
   display: block;
+  padding-left: 46px;
 
   &:not(:last-child) {
-    margin-bottom: 24px;
+    @media (max-width: $mobile-max) {
+      margin-bottom: 23px;
+    }
   }
-}
-
-.choice-item__text {
-  margin-left: 46px;
-
-  @include fonts($font-size-s-300, $line-height-s-400);
 
   @media (min-width: $tablet) {
-    margin-left: 88px;
-
-    @include fonts($font-size-m-100, $line-height-m-600);
+    margin-bottom: 23px;
+    padding-left: 88px;
   }
 
   &--extra {
     @media (min-width: $tablet) {
-      margin-left: 58px;
+      padding-left: 60px;
     }
+  }
+}
+
+.choice-item__text {
+  @include fonts($font-size-s-300, $line-height-s-400);
+
+  @media (min-width: $tablet) {
+    @include fonts($font-size-m-100, $line-height-m-600);
   }
 }
 
@@ -43,27 +47,27 @@
   }
 
   & + span::before {
-    top: -7px;
+    top: -6px;
     left: 0;
 
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
 
     border: 1px solid $special-grey-2;
 
     @media (min-width: $tablet) {
-      top: -6px;
-      left: 25px;
+      top: -5px;
+      left: 28px;
 
-      width: 40px;
-      height: 40px;
+      width: 38px;
+      height: 38px;
     }
   }
 
   &:checked {
     & + span::after {
       top: 2px;
-      left: 9px;
+      left: 8px;
 
       width: 14px;
       height: 14px;
@@ -72,7 +76,7 @@
 
       @media (min-width: $tablet) {
         top: 6px;
-        left: 37px;
+        left: 39px;
 
         width: 18px;
         height: 18px;
@@ -121,7 +125,7 @@
 
     &:checked {
       & + span::after {
-        top: -2px;
+        top: -1px;
         left: 7px;
 
         width: 18px;
