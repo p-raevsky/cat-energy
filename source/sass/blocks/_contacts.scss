@@ -21,12 +21,15 @@
   @media (min-width: $desktop) {
     display: flex;
     justify-content: space-between;
-    align-items: center;
   }
 }
 
 .contacts__item-wrap {
   position: relative;
+
+  &:focus-within svg {
+    fill: $basic-green;
+  }
 
   @media (min-width: $desktop) {
     width: 572px;
@@ -38,7 +41,7 @@
 
   &--email {
     top: 16px;
-    right: 14px;
+    right: 15px;
 
     @media (min-width: $tablet) {
       top: 19px;
@@ -46,61 +49,54 @@
     }
 
     @media (min-width: $desktop) {
+      top: 18px;
       right: 21px;
     }
 
     &--error {
       top: 16px;
-      right: 14px;
+      right: 15px;
 
       fill: $Error-color;
 
       @media (min-width: $tablet) {
-        top: 20px;
+        top: 19px;
+        right: 17px;
       }
-    }
 
-    &--disabled {
-      top: 16px;
-      right: 14px;
-
-      fill: $basic-green;
-
-      @media (min-width: $tablet) {
-        top: 20px;
+      @media (min-width: $desktop) {
+        top: 18px;
+        right: 21px;
       }
     }
   }
 
   &--tel {
     top: 13px;
-    right: 11px;
+    right: 12px;
 
     @media (min-width: $tablet) {
       top: 16px;
       right: 16px;
     }
 
+    @media (min-width: $desktop) {
+      top: 15px;
+    }
 
     &--error {
       top: 13px;
-      right: 11px;
+      right: 12px;
 
       fill: $Error-color;
 
       @media (min-width: $tablet) {
-        top: 17px;
+        top: 16px;
+        right: 16px;
       }
-    }
 
-    &--disabled {
-      top: 13px;
-      right: 11px;
-
-      fill: $basic-green;
-
-      @media (min-width: $tablet) {
-        top: 17px;
+      @media (min-width: $desktop) {
+        top: 15px;
       }
     }
   }

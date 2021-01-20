@@ -1,6 +1,6 @@
 .data-item {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 
   &:not(:last-child) {
     margin-bottom: 13px;
@@ -25,44 +25,34 @@
 
 .data-item__text {
   display: inline-block;
+  padding-top: 15px;
+  padding-right: 14px;
 
   color: $special-grey-darker;
 
   @include fonts($font-size-s-300, $line-height-s-400);
 
-  span {
-    display: inline-block;
-    width: 14px;
+  @media (min-width: $tablet) {
+    padding-top: 10px;
+    padding-right: 18px;
 
-    @media (min-width: $tablet) {
-      width: 19px;
-    }
+    @include fonts($font-size-m-100, $line-height-m-600);
   }
 
   &--contacts {
-    padding-bottom: 8px;
-
-    span {
-      display: inline-block;
-      width: 9px;
-
-      @media (min-width: $tablet) {
-        width: 17px;
-      }
-    }
+    padding-top: 11px;
+    padding-right: 9px;
 
     @media (min-width: $tablet) {
+      padding-right: 17px;
       padding-bottom: 2px;
     }
-  }
-
-  @media (min-width: $tablet) {
-    @include fonts($font-size-m-100, $line-height-m-600);
   }
 }
 
 .data-item__field {
   flex-grow: 1;
+  box-sizing: border-box;
   padding: 13px 15px 13px;
 
   color: $special-grey-darker;
@@ -85,9 +75,8 @@
     box-shadow: inset 0 0 0 1px $special-grey-darker;
   }
 
-  &:invalid:not(:focus):not(:placeholder-shown) {
-    border: 1px solid $Error-color;
-    box-shadow: inset 0 0 0 1px $Error-color;
+  @media (max-width: $mobile-max) {
+    width: calc(100% - 120px);
   }
 
   @media (min-width: $tablet) {

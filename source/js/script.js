@@ -3,8 +3,8 @@ var navToggle = document.querySelector('.main-nav__toggle');
 var noJs = document.querySelector('.main-nav__toggle');
 var buttonForm = document.querySelector('.form__button');
 var dataItemField = document.querySelectorAll('.data-item__field:required');
-var fieldContactsTel = document.querySelector('.data-item__field--contacts--tel');
-var fieldContactsEmail = document.querySelector('.data-item__field--contacts--email');
+var fieldContactsTel = document.querySelector('.data-item__field--tel');
+var fieldContactsEmail = document.querySelector('.data-item__field--email');
 var contactsIconTel = document.querySelector('.contacts__icon--tel');
 var contactsIconEmail = document.querySelector('.contacts__icon--email');
 var demoBtnBefore = document.querySelector('.demo__btn--before');
@@ -40,23 +40,11 @@ if (buttonForm) {
         dataItemField[i].classList.remove('data-item__field--error');
       }
     }
-    return;
-  });
-}
-
-if (fieldContactsTel) {
-  document.addEventListener('DOMContentLoaded', function() {
-    if (fieldContactsTel.disabled === true) {
-      contactsIconTel.classList.add('contacts__icon--tel--disabled');
+    if (fieldContactsTel.value === '') {
+      contactsIconTel.classList.add('contacts__icon--tel--error');
     }
-    return;
-  });
-}
-
-if (fieldContactsEmail) {
-  document.addEventListener('DOMContentLoaded', function() {
-    if (fieldContactsEmail.disabled === true) {
-      contactsIconEmail.classList.add('contacts__icon--email--disabled');
+    if (fieldContactsEmail.value === '') {
+      contactsIconEmail.classList.add('contacts__icon--email--error');
     }
     return;
   });
@@ -87,5 +75,21 @@ if (demoBtnBefore) {
     demoImgAfter.classList.add('demo__img--before--close');
     demoImgAfter.classList.remove('demo__img--after--full');
     demoImgBefore.classList.remove('demo__img--before--close');
+  });
+}
+
+if (dataItemField.length > 0) {
+  document.addEventListener('click', function (evt) {
+    for (var i = 0; i < dataItemField.length; i++) {
+      if (dataItemField[i].value !== '') {
+        dataItemField[i].classList.remove('data-item__field--error');
+      }
+    }
+    if (fieldContactsTel.value !== '') {
+      contactsIconTel.classList.remove('contacts__icon--tel--error');
+    }
+    if (fieldContactsEmail.value !== '') {
+      contactsIconEmail.classList.remove('contacts__icon--email--error');
+    }
   });
 }
