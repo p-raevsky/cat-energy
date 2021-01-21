@@ -35,6 +35,12 @@
     }
   }
 
+  &:not(:nth-child(4n+4)) {
+    @media (min-width: $desktop) {
+      padding-right: 82px;
+    }
+  }
+
   @media (min-width: $tablet) {
     width: 35%;
     margin-bottom: 42px;
@@ -42,11 +48,5 @@
 
   @media (min-width: $desktop) {
     width: 15%;
-  }
-
-  &:not(:last-child) {
-    @media (min-width: $desktop) {
-      padding-right: 82px;
-    }
   }
 }
